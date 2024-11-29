@@ -45,10 +45,8 @@ class Книга {
 
 class Задолженность {
     +user_id : int
-    +fine_amount : float
     +isOverdue() : bool
-    +calculateFine() : float
-    +addFine() : void
+
 }
 
 class Система {
