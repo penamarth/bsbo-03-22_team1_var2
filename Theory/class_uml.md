@@ -165,7 +165,7 @@ class Библиотекарь {
     +chooseOption(option_number: int): void
     +displayAddWindow(): void
     +addBook(params_dict: Map<String, String>): void
-    +confirmAddBook(): void
+    +confirmAddBook(params_dict: Map<String, String>): void
     +deleteBook(book_id: int): void
     +requestDeleteConfirmation(): void
     +approveDeleteConfirmation(): void
