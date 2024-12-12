@@ -1,0 +1,7 @@
+C:\bsbo-03-22_team1_var2\Backend\library\bin\Release\library.exe.config
+C:\bsbo-03-22_team1_var2\Backend\library\bin\Release\library.exe
+C:\bsbo-03-22_team1_var2\Backend\library\bin\Release\library.pdb
+C:\bsbo-03-22_team1_var2\Backend\library\obj\Release\library.csproj.AssemblyReference.cache
+C:\bsbo-03-22_team1_var2\Backend\library\obj\Release\library.csproj.CoreCompileInputs.cache
+C:\bsbo-03-22_team1_var2\Backend\library\obj\Release\library.exe
+C:\bsbo-03-22_team1_var2\Backend\library\obj\Release\library.pdb

@@ -1,0 +1,7 @@
+C:\bsbo-03-22_team1_var2\Backend\library\bin\Debug\library.exe.config
+C:\bsbo-03-22_team1_var2\Backend\library\bin\Debug\library.exe
+C:\bsbo-03-22_team1_var2\Backend\library\bin\Debug\library.pdb
+C:\bsbo-03-22_team1_var2\Backend\library\obj\Debug\library.csproj.AssemblyReference.cache
+C:\bsbo-03-22_team1_var2\Backend\library\obj\Debug\library.csproj.CoreCompileInputs.cache
+C:\bsbo-03-22_team1_var2\Backend\library\obj\Debug\library.exe
+C:\bsbo-03-22_team1_var2\Backend\library\obj\Debug\library.pdb
