@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="2285px" preserveAspectRatio="none" style="width:2169px;height:2285px;background:#FFFFFF;" version="1.1" viewBox="0 0 2169 2285" width="2169px" zoomAndPan="magnify"><defs/><g><!--MD5=[4e13963c9dc916a21a8436ef39422b32]
+class Component--><g id="elem_Component"><rect codeLine="2" fill="#F1F1F1" height="145.7813" id="Component" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="296" x="1866.61" y="1925.5"/><ellipse cx="1969.36" cy="1941.5" fill="#A9DCDF" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1969.4694,1936.8438 L1968.3131,1941.9219 L1970.6413,1941.9219 L1969.4694,1936.8438 Z M1967.985,1934.6094 L1970.9694,1934.6094 L1974.3288,1947 L1971.8756,1947 L1971.11,1943.9375 L1967.8288,1943.9375 L1967.0788,1947 L1964.6413,1947 L1967.985,1934.6094 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="82" x="1989.86" y="1946.3467">Component</text><line style="stroke:#181818;stroke-width:0.5;" x1="1867.61" x2="2161.61" y1="1957.5" y2="1957.5"/><ellipse cx="1877.61" cy="1971.1484" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="38" x="1886.61" y="1974.4951">id: int</text><ellipse cx="1877.61" cy="1987.4453" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="1886.61" y="1990.792">name: String</text><line style="stroke:#181818;stroke-width:0.5;" x1="1867.61" x2="2161.61" y1="1998.0938" y2="1998.0938"/><ellipse cx="1877.61" cy="2011.7422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="244" x="1886.61" y="2015.0889">add(component: Component): void</text><ellipse cx="1877.61" cy="2028.0391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="270" x="1886.61" y="2031.3857">remove(component: Component): void</text><ellipse cx="1877.61" cy="2044.3359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="196" x="1886.61" y="2047.6826">getChild(id: int): Component</text><ellipse cx="1877.61" cy="2060.6328" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="113" x="1886.61" y="2063.9795">operation(): void</text></g><!--MD5=[612a370989b69f70bf9f0449b6ecf33f]
+class Каталог--><g id="elem_Каталог"><rect codeLine="12" fill="#F1F1F1" height="129.4844" id="Каталог" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="314" x="1842.61" y="589"/><ellipse cx="1965.36" cy="605" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1968.3288,610.6406 Q1967.7506,610.9375 1967.11,611.0781 Q1966.4694,611.2344 1965.7663,611.2344 Q1963.2663,611.2344 1961.9381,609.5938 Q1960.6256,607.9375 1960.6256,604.8125 Q1960.6256,601.6875 1961.9381,600.0313 Q1963.2663,598.375 1965.7663,598.375 Q1966.4694,598.375 1967.11,598.5313 Q1967.7663,598.6875 1968.3288,598.9844 L1968.3288,601.7031 Q1967.7038,601.125 1967.11,600.8594 Q1966.5163,600.5781 1965.8913,600.5781 Q1964.5475,600.5781 1963.86,601.6563 Q1963.1725,602.7188 1963.1725,604.8125 Q1963.1725,606.9063 1963.86,607.9844 Q1964.5475,609.0469 1965.8913,609.0469 Q1966.5163,609.0469 1967.11,608.7813 Q1967.7038,608.5 1968.3288,607.9219 L1968.3288,610.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="1985.86" y="609.8467">Каталог</text><line style="stroke:#181818;stroke-width:0.5;" x1="1843.61" x2="2155.61" y1="621" y2="621"/><ellipse cx="1853.61" cy="634.6484" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="191" x="1862.61" y="637.9951">shelves: List&lt;Component&gt;</text><line style="stroke:#181818;stroke-width:0.5;" x1="1843.61" x2="2155.61" y1="645.2969" y2="645.2969"/><ellipse cx="1853.61" cy="658.9453" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="288" x="1862.61" y="662.292">searchBooks(query: String): List&lt;Книга&gt;</text><ellipse cx="1853.61" cy="675.2422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="193" x="1862.61" y="678.5889">addShelf(shelf: Шкаф): void</text><ellipse cx="1853.61" cy="691.5391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="211" x="1862.61" y="694.8857">removeShelf(shelf_id: int): void</text><ellipse cx="1853.61" cy="707.8359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="113" x="1862.61" y="711.1826">operation(): void</text></g><!--MD5=[377aa7f24fbd415c307dbadf772f60af]
+class Шкаф--><g id="elem_Шкаф"><rect codeLine="20" fill="#F1F1F1" height="113.1875" id="Шкаф" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="218" x="1778.61" y="1129.5"/><ellipse cx="1861.36" cy="1145.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1864.3288,1151.1406 Q1863.7506,1151.4375 1863.11,1151.5781 Q1862.4694,1151.7344 1861.7663,1151.7344 Q1859.2663,1151.7344 1857.9381,1150.0938 Q1856.6256,1148.4375 1856.6256,1145.3125 Q1856.6256,1142.1875 1857.9381,1140.5313 Q1859.2663,1138.875 1861.7663,1138.875 Q1862.4694,1138.875 1863.11,1139.0313 Q1863.7663,1139.1875 1864.3288,1139.4844 L1864.3288,1142.2031 Q1863.7038,1141.625 1863.11,1141.3594 Q1862.5163,1141.0781 1861.8913,1141.0781 Q1860.5475,1141.0781 1859.86,1142.1563 Q1859.1725,1143.2188 1859.1725,1145.3125 Q1859.1725,1147.4063 1859.86,1148.4844 Q1860.5475,1149.5469 1861.8913,1149.5469 Q1862.5163,1149.5469 1863.11,1149.2813 Q1863.7038,1149 1864.3288,1148.4219 L1864.3288,1151.1406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="44" x="1881.86" y="1150.3467">Шкаф</text><line style="stroke:#181818;stroke-width:0.5;" x1="1779.61" x2="1995.61" y1="1161.5" y2="1161.5"/><ellipse cx="1789.61" cy="1175.1484" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="169" x="1798.61" y="1178.4951">cells: List&lt;Component&gt;</text><line style="stroke:#181818;stroke-width:0.5;" x1="1779.61" x2="1995.61" y1="1185.7969" y2="1185.7969"/><ellipse cx="1789.61" cy="1199.4453" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="181" x="1798.61" y="1202.792">addCell(cell: Ячейка): void</text><ellipse cx="1789.61" cy="1215.7422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="192" x="1798.61" y="1219.0889">removeCell(cell_id: int): void</text><ellipse cx="1789.61" cy="1232.0391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="113" x="1798.61" y="1235.3857">operation(): void</text></g><!--MD5=[990ff87f99f6597e2cf67d266007ca46]
+class Ячейка--><g id="elem_Ячейка"><rect codeLine="27" fill="#F1F1F1" height="113.1875" id="Ячейка" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="241" x="1684.11" y="1670"/><ellipse cx="1774.86" cy="1686" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1777.8288,1691.6406 Q1777.2506,1691.9375 1776.61,1692.0781 Q1775.9694,1692.2344 1775.2663,1692.2344 Q1772.7663,1692.2344 1771.4381,1690.5938 Q1770.1256,1688.9375 1770.1256,1685.8125 Q1770.1256,1682.6875 1771.4381,1681.0313 Q1772.7663,1679.375 1775.2663,1679.375 Q1775.9694,1679.375 1776.61,1679.5313 Q1777.2663,1679.6875 1777.8288,1679.9844 L1777.8288,1682.7031 Q1777.2038,1682.125 1776.61,1681.8594 Q1776.0163,1681.5781 1775.3913,1681.5781 Q1774.0475,1681.5781 1773.36,1682.6563 Q1772.6725,1683.7188 1772.6725,1685.8125 Q1772.6725,1687.9063 1773.36,1688.9844 Q1774.0475,1690.0469 1775.3913,1690.0469 Q1776.0163,1690.0469 1776.61,1689.7813 Q1777.2038,1689.5 1777.8288,1688.9219 L1777.8288,1691.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51" x="1795.36" y="1690.8467">Ячейка</text><line style="stroke:#181818;stroke-width:0.5;" x1="1685.11" x2="1924.11" y1="1702" y2="1702"/><ellipse cx="1695.11" cy="1715.6484" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="181" x="1704.11" y="1718.9951">books: List&lt;Component&gt;</text><line style="stroke:#181818;stroke-width:0.5;" x1="1685.11" x2="1924.11" y1="1726.2969" y2="1726.2969"/><ellipse cx="1695.11" cy="1739.9453" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="196" x="1704.11" y="1743.292">addBook(book: Книга): void</text><ellipse cx="1695.11" cy="1756.2422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="215" x="1704.11" y="1759.5889">removeBook(book_id: int): void</text><ellipse cx="1695.11" cy="1772.5391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="113" x="1704.11" y="1775.8857">operation(): void</text></g><!--MD5=[ac84faabacf07e815cf8d76327b582e2]
+class Книга--><g id="elem_Книга"><rect codeLine="35" fill="#F1F1F1" height="210.9688" id="Книга" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="326" x="1505.61" y="1893"/><ellipse cx="1642.86" cy="1909" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1645.8288,1914.6406 Q1645.2506,1914.9375 1644.61,1915.0781 Q1643.9694,1915.2344 1643.2663,1915.2344 Q1640.7663,1915.2344 1639.4381,1913.5938 Q1638.1256,1911.9375 1638.1256,1908.8125 Q1638.1256,1905.6875 1639.4381,1904.0313 Q1640.7663,1902.375 1643.2663,1902.375 Q1643.9694,1902.375 1644.61,1902.5313 Q1645.2663,1902.6875 1645.8288,1902.9844 L1645.8288,1905.7031 Q1645.2038,1905.125 1644.61,1904.8594 Q1644.0163,1904.5781 1643.3913,1904.5781 Q1642.0475,1904.5781 1641.36,1905.6563 Q1640.6725,1906.7188 1640.6725,1908.8125 Q1640.6725,1910.9063 1641.36,1911.9844 Q1642.0475,1913.0469 1643.3913,1913.0469 Q1644.0163,1913.0469 1644.61,1912.7813 Q1645.2038,1912.5 1645.8288,1911.9219 L1645.8288,1914.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43" x="1663.36" y="1913.8467">Книга</text><line style="stroke:#181818;stroke-width:0.5;" x1="1506.61" x2="1830.61" y1="1925" y2="1925"/><ellipse cx="1516.61" cy="1938.6484" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="1525.61" y="1941.9951">book_id: int</text><ellipse cx="1516.61" cy="1954.9453" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="74" x="1525.61" y="1958.292">title: String</text><ellipse cx="1516.61" cy="1971.2422" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94" x="1525.61" y="1974.5889">author: String</text><ellipse cx="1516.61" cy="1987.5391" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="92" x="1525.61" y="1990.8857">status: String</text><ellipse cx="1516.61" cy="2003.8359" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="114" x="1525.61" y="2007.1826">location: Ячейка</text><ellipse cx="1516.61" cy="2020.1328" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="224" x="1525.61" y="2023.4795">damages: List&lt;Повреждение&gt;</text><line style="stroke:#181818;stroke-width:0.5;" x1="1506.61" x2="1830.61" y1="2030.7813" y2="2030.7813"/><ellipse cx="1516.61" cy="2044.4297" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="232" x="1525.61" y="2047.7764">updateStatus(status: String): void</text><ellipse cx="1516.61" cy="2060.7266" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="300" x="1525.61" y="2064.0732">addDamage(damage: Повреждение): void</text><ellipse cx="1516.61" cy="2077.0234" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="258" x="1525.61" y="2080.3701">removeDamage(damage_id: int): void</text><ellipse cx="1516.61" cy="2093.3203" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="113" x="1525.61" y="2096.667">operation(): void</text></g><!--MD5=[65f26c6ef57e841c6834cafd61619d6b]
+class Повреждение--><g id="elem_Повреждение"><rect codeLine="50" fill="#F1F1F1" height="113.1875" id="Повреждение" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="152" x="1592.61" y="2165"/><ellipse cx="1614.81" cy="2181" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1617.7788,2186.6406 Q1617.2006,2186.9375 1616.56,2187.0781 Q1615.9194,2187.2344 1615.2163,2187.2344 Q1612.7163,2187.2344 1611.3881,2185.5938 Q1610.0756,2183.9375 1610.0756,2180.8125 Q1610.0756,2177.6875 1611.3881,2176.0313 Q1612.7163,2174.375 1615.2163,2174.375 Q1615.9194,2174.375 1616.56,2174.5313 Q1617.2163,2174.6875 1617.7788,2174.9844 L1617.7788,2177.7031 Q1617.1538,2177.125 1616.56,2176.8594 Q1615.9663,2176.5781 1615.3413,2176.5781 Q1613.9975,2176.5781 1613.31,2177.6563 Q1612.6225,2178.7188 1612.6225,2180.8125 Q1612.6225,2182.9063 1613.31,2183.9844 Q1613.9975,2185.0469 1615.3413,2185.0469 Q1615.9663,2185.0469 1616.56,2184.7813 Q1617.1538,2184.5 1617.7788,2183.9219 L1617.7788,2186.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="104" x="1630.41" y="2185.8467">Повреждение</text><line style="stroke:#181818;stroke-width:0.5;" x1="1593.61" x2="1743.61" y1="2197" y2="2197"/><ellipse cx="1603.61" cy="2210.6484" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="101" x="1612.61" y="2213.9951">damage_id: int</text><ellipse cx="1603.61" cy="2226.9453" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="126" x="1612.61" y="2230.292">description: String</text><ellipse cx="1603.61" cy="2243.2422" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="1612.61" y="2246.5889">cost: float</text><line style="stroke:#181818;stroke-width:0.5;" x1="1593.61" x2="1743.61" y1="2253.8906" y2="2253.8906"/><ellipse cx="1603.61" cy="2267.5391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="113" x="1612.61" y="2270.8857">operation(): void</text></g><!--MD5=[afa7e72ff6245576d5778159acb35ed9]
+class Уведомление--><g id="elem_Уведомление"><rect codeLine="59" fill="#F1F1F1" height="194.6719" id="Уведомление" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="286" x="711.61" y="556"/><ellipse cx="800.86" cy="572" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M803.8288,577.6406 Q803.2506,577.9375 802.61,578.0781 Q801.9694,578.2344 801.2663,578.2344 Q798.7663,578.2344 797.4381,576.5938 Q796.1256,574.9375 796.1256,571.8125 Q796.1256,568.6875 797.4381,567.0313 Q798.7663,565.375 801.2663,565.375 Q801.9694,565.375 802.61,565.5313 Q803.2663,565.6875 803.8288,565.9844 L803.8288,568.7031 Q803.2038,568.125 802.61,567.8594 Q802.0163,567.5781 801.3913,567.5781 Q800.0475,567.5781 799.36,568.6563 Q798.6725,569.7188 798.6725,571.8125 Q798.6725,573.9063 799.36,574.9844 Q800.0475,576.0469 801.3913,576.0469 Q802.0163,576.0469 802.61,575.7813 Q803.2038,575.5 803.8288,574.9219 L803.8288,577.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="99" x="821.36" y="576.8467">Уведомление</text><line style="stroke:#181818;stroke-width:0.5;" x1="712.61" x2="996.61" y1="588" y2="588"/><ellipse cx="722.61" cy="601.6484" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="731.61" y="604.9951">notification_id: int</text><ellipse cx="722.61" cy="617.9453" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="76" x="731.61" y="621.292">user_id: int</text><ellipse cx="722.61" cy="634.2422" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="731.61" y="637.5889">book_id: int</text><ellipse cx="722.61" cy="650.5391" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="731.61" y="653.8857">type: String</text><ellipse cx="722.61" cy="666.8359" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="113" x="731.61" y="670.1826">message: String</text><ellipse cx="722.61" cy="683.1328" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="73" x="731.61" y="686.4795">date: Date</text><ellipse cx="722.61" cy="699.4297" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="92" x="731.61" y="702.7764">status: String</text><line style="stroke:#181818;stroke-width:0.5;" x1="712.61" x2="996.61" y1="710.0781" y2="710.0781"/><ellipse cx="722.61" cy="723.7266" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="158" x="731.61" y="727.0732">sendNotification(): void</text><ellipse cx="722.61" cy="740.0234" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="260" x="731.61" y="743.3701">scheduleNotification(date: Date): void</text></g><!--MD5=[e64cfcdb5f35b1fd85a6b0aeca24e4da]
+class Бронирование--><g id="elem_Бронирование"><rect codeLine="73" fill="#F1F1F1" height="210.9688" id="Бронирование" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="452" x="62.61" y="1621"/><ellipse cx="230.86" cy="1637" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M233.8288,1642.6406 Q233.2506,1642.9375 232.61,1643.0781 Q231.9694,1643.2344 231.2663,1643.2344 Q228.7663,1643.2344 227.4381,1641.5938 Q226.1256,1639.9375 226.1256,1636.8125 Q226.1256,1633.6875 227.4381,1632.0313 Q228.7663,1630.375 231.2663,1630.375 Q231.9694,1630.375 232.61,1630.5313 Q233.2663,1630.6875 233.8288,1630.9844 L233.8288,1633.7031 Q233.2038,1633.125 232.61,1632.8594 Q232.0163,1632.5781 231.3913,1632.5781 Q230.0475,1632.5781 229.36,1633.6563 Q228.6725,1634.7188 228.6725,1636.8125 Q228.6725,1638.9063 229.36,1639.9844 Q230.0475,1641.0469 231.3913,1641.0469 Q232.0163,1641.0469 232.61,1640.7813 Q233.2038,1640.5 233.8288,1639.9219 L233.8288,1642.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="107" x="251.36" y="1641.8467">Бронирование</text><line style="stroke:#181818;stroke-width:0.5;" x1="63.61" x2="513.61" y1="1653" y2="1653"/><ellipse cx="73.61" cy="1666.6484" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="122" x="82.61" y="1669.9951">reservation_id: int</text><ellipse cx="73.61" cy="1682.9453" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="76" x="82.61" y="1686.292">user_id: int</text><ellipse cx="73.61" cy="1699.2422" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="82.61" y="1702.5889">book_id: int</text><ellipse cx="73.61" cy="1715.5391" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="157" x="82.61" y="1718.8857">reservation_date: Date</text><ellipse cx="73.61" cy="1731.8359" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="194" x="82.61" y="1735.1826">expected_return_date: Date</text><ellipse cx="73.61" cy="1748.1328" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="92" x="82.61" y="1751.4795">status: String</text><line style="stroke:#181818;stroke-width:0.5;" x1="63.61" x2="513.61" y1="1758.7813" y2="1758.7813"/><ellipse cx="73.61" cy="1772.4297" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="337" x="82.61" y="1775.7764">createReservation(user_id: int, book_id: int): void</text><ellipse cx="73.61" cy="1788.7266" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="426" x="82.61" y="1792.0732">addToReservationQueue(user_id: int, reservation_id: int): void</text><ellipse cx="73.61" cy="1805.0234" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="422" x="82.61" y="1808.3701">getReservationDetails(reservation_id: int): ReservationDetails</text><ellipse cx="73.61" cy="1821.3203" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="268" x="82.61" y="1824.667">updateStatus(new_status: String): void</text></g><!--MD5=[c4a3bad4d26e4c3afd62047cf2c19089]
+class Задолженности--><g id="elem_Задолженности"><rect codeLine="88" fill="#F1F1F1" height="113.1875" id="Задолженности" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="303" x="1033.11" y="597"/><ellipse cx="1120.36" cy="613" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M1123.3288,618.6406 Q1122.7506,618.9375 1122.11,619.0781 Q1121.4694,619.2344 1120.7663,619.2344 Q1118.2663,619.2344 1116.9381,617.5938 Q1115.6256,615.9375 1115.6256,612.8125 Q1115.6256,609.6875 1116.9381,608.0313 Q1118.2663,606.375 1120.7663,606.375 Q1121.4694,606.375 1122.11,606.5313 Q1122.7663,606.6875 1123.3288,606.9844 L1123.3288,609.7031 Q1122.7038,609.125 1122.11,608.8594 Q1121.5163,608.5781 1120.8913,608.5781 Q1119.5475,608.5781 1118.86,609.6563 Q1118.1725,610.7188 1118.1725,612.8125 Q1118.1725,614.9063 1118.86,615.9844 Q1119.5475,617.0469 1120.8913,617.0469 Q1121.5163,617.0469 1122.11,616.7813 Q1122.7038,616.5 1123.3288,615.9219 L1123.3288,618.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="1140.86" y="617.8467">Задолженности</text><line style="stroke:#181818;stroke-width:0.5;" x1="1034.11" x2="1335.11" y1="629" y2="629"/><ellipse cx="1044.11" cy="642.6484" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="76" x="1053.11" y="645.9951">user_id: int</text><ellipse cx="1044.11" cy="658.9453" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="123" x="1053.11" y="662.292">fine_amount: float</text><line style="stroke:#181818;stroke-width:0.5;" x1="1034.11" x2="1335.11" y1="669.5938" y2="669.5938"/><ellipse cx="1044.11" cy="683.2422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="277" x="1053.11" y="686.5889">addFine(user_id: int, amount: float): void</text><ellipse cx="1044.11" cy="699.5391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="181" x="1053.11" y="702.8857">getDebt(user_id: int): float</text></g><!--MD5=[7727584e4826944d4ad925785137a196]
+class Пользователь--><g id="elem_Пользователь"><rect codeLine="97" fill="#F1F1F1" height="162.0781" id="Пользователь" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="159" x="56.11" y="170"/><ellipse cx="81.46" cy="186" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M84.4288,191.6406 Q83.8506,191.9375 83.21,192.0781 Q82.5694,192.2344 81.8663,192.2344 Q79.3663,192.2344 78.0381,190.5938 Q76.7256,188.9375 76.7256,185.8125 Q76.7256,182.6875 78.0381,181.0313 Q79.3663,179.375 81.8663,179.375 Q82.5694,179.375 83.21,179.5313 Q83.8663,179.6875 84.4288,179.9844 L84.4288,182.7031 Q83.8038,182.125 83.21,181.8594 Q82.6163,181.5781 81.9913,181.5781 Q80.6475,181.5781 79.96,182.6563 Q79.2725,183.7188 79.2725,185.8125 Q79.2725,187.9063 79.96,188.9844 Q80.6475,190.0469 81.9913,190.0469 Q82.6163,190.0469 83.21,189.7813 Q83.8038,189.5 84.4288,188.9219 L84.4288,191.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="104" x="97.76" y="190.8467">Пользователь</text><line style="stroke:#181818;stroke-width:0.5;" x1="57.11" x2="214.11" y1="202" y2="202"/><ellipse cx="67.11" cy="215.6484" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="76" x="76.11" y="218.9951">user_id: int</text><ellipse cx="67.11" cy="231.9453" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="76.11" y="235.292">name: String</text><ellipse cx="67.11" cy="248.2422" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="76.11" y="251.5889">email: String</text><ellipse cx="67.11" cy="264.5391" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133" x="76.11" y="267.8857">contact_info: String</text><line style="stroke:#181818;stroke-width:0.5;" x1="57.11" x2="214.11" y1="275.1875" y2="275.1875"/><ellipse cx="67.11" cy="288.8359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="100" x="76.11" y="292.1826">register(): void</text><ellipse cx="67.11" cy="305.1328" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="76.11" y="308.4795">login(): void</text><ellipse cx="67.11" cy="321.4297" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="91" x="76.11" y="324.7764">logout(): void</text></g><!--MD5=[bc01fa851b81996b7e8d1878f85c90d5]
+class Читатель--><g id="elem_Читатель"><rect codeLine="108" fill="#F1F1F1" height="145.7813" id="Читатель" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="355" x="250.11" y="580.5"/><ellipse cx="388.36" cy="596.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M391.3288,602.1406 Q390.7506,602.4375 390.11,602.5781 Q389.4694,602.7344 388.7663,602.7344 Q386.2663,602.7344 384.9381,601.0938 Q383.6256,599.4375 383.6256,596.3125 Q383.6256,593.1875 384.9381,591.5313 Q386.2663,589.875 388.7663,589.875 Q389.4694,589.875 390.11,590.0313 Q390.7663,590.1875 391.3288,590.4844 L391.3288,593.2031 Q390.7038,592.625 390.11,592.3594 Q389.5163,592.0781 388.8913,592.0781 Q387.5475,592.0781 386.86,593.1563 Q386.1725,594.2188 386.1725,596.3125 Q386.1725,598.4063 386.86,599.4844 Q387.5475,600.5469 388.8913,600.5469 Q389.5163,600.5469 390.11,600.2813 Q390.7038,600 391.3288,599.4219 L391.3288,602.1406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="70" x="408.86" y="601.3467">Читатель</text><line style="stroke:#181818;stroke-width:0.5;" x1="251.11" x2="604.11" y1="612.5" y2="612.5"/><ellipse cx="261.11" cy="626.1484" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="209" x="270.11" y="629.4951">borrowedBooks: List&lt;Книга&gt;</text><ellipse cx="261.11" cy="642.4453" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="71" x="270.11" y="645.792">fines: float</text><line style="stroke:#181818;stroke-width:0.5;" x1="251.11" x2="604.11" y1="653.0938" y2="653.0938"/><ellipse cx="261.11" cy="666.7422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="256" x="270.11" y="670.0889">giveBookToReturn(book_id: int): void</text><ellipse cx="261.11" cy="683.0391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="174" x="270.11" y="686.3857">requestBookIssue(): void</text><ellipse cx="261.11" cy="699.3359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="329" x="270.11" y="702.6826">chooseAlternative(alternative_number: int): void</text><ellipse cx="261.11" cy="715.6328" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="215" x="270.11" y="718.9795">reserveBook(book_id: int): void</text></g><!--MD5=[d7030ce824723a5d23556a115b364559]
+class Библиотекарь--><g id="elem_Библиотекарь"><rect codeLine="119" fill="#F1F1F1" height="716.1719" id="Библиотекарь" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="511" x="250.11" y="828"/><ellipse cx="448.36" cy="844" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M451.3288,849.6406 Q450.7506,849.9375 450.11,850.0781 Q449.4694,850.2344 448.7663,850.2344 Q446.2663,850.2344 444.9381,848.5938 Q443.6256,846.9375 443.6256,843.8125 Q443.6256,840.6875 444.9381,839.0313 Q446.2663,837.375 448.7663,837.375 Q449.4694,837.375 450.11,837.5313 Q450.7663,837.6875 451.3288,837.9844 L451.3288,840.7031 Q450.7038,840.125 450.11,839.8594 Q449.5163,839.5781 448.8913,839.5781 Q447.5475,839.5781 446.86,840.6563 Q446.1725,841.7188 446.1725,843.8125 Q446.1725,845.9063 446.86,846.9844 Q447.5475,848.0469 448.8913,848.0469 Q449.5163,848.0469 450.11,847.7813 Q450.7038,847.5 451.3288,846.9219 L451.3288,849.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="106" x="468.86" y="848.8467">Библиотекарь</text><line style="stroke:#181818;stroke-width:0.5;" x1="251.11" x2="760.11" y1="860" y2="860"/><ellipse cx="261.11" cy="873.6484" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="106" x="270.11" y="876.9951">employeeId: int</text><ellipse cx="261.11" cy="889.9453" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="107" x="270.11" y="893.292">workStart: Date</text><ellipse cx="261.11" cy="906.2422" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="102" x="270.11" y="909.5889">workEnd: Date</text><ellipse cx="261.11" cy="922.5391" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="138" x="270.11" y="925.8857">library: Библиотека</text><line style="stroke:#181818;stroke-width:0.5;" x1="251.11" x2="760.11" y1="933.1875" y2="933.1875"/><ellipse cx="261.11" cy="946.8359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="299" x="270.11" y="950.1826">checkBookCondition(book_id: int): boolean</text><ellipse cx="261.11" cy="963.1328" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="224" x="270.11" y="966.4795">reportOverdue(user_id: int): void</text><ellipse cx="261.11" cy="979.4297" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="319" x="270.11" y="982.7764">calculateOverdueFine(days_overdue: int): float</text><ellipse cx="261.11" cy="995.7266" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="325" x="270.11" y="999.0732">reportFine(user_id: int, fine_amount: float): void</text><ellipse cx="261.11" cy="1012.0234" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="359" x="270.11" y="1015.3701">addFineToUser(user_id: int, fine_amount: float): void</text><ellipse cx="261.11" cy="1028.3203" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="223" x="270.11" y="1031.667">reportDamage(user_id: int): void</text><ellipse cx="261.11" cy="1044.6172" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="276" x="270.11" y="1047.9639">calculateDamageFine(book_id: int): float</text><ellipse cx="261.11" cy="1060.9141" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="383" x="270.11" y="1064.2607">reportDamageFine(user_id: int, fine_amount: float): void</text><ellipse cx="261.11" cy="1077.2109" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="421" x="270.11" y="1080.5576">fixIssue(userID: int, date_issue: Date, return_period: int): void</text><ellipse cx="261.11" cy="1093.5078" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="191" x="270.11" y="1096.8545">giveBook(book_id: int): void</text><ellipse cx="261.11" cy="1109.8047" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="192" x="270.11" y="1113.1514">blockIssue(userID: int): void</text><ellipse cx="261.11" cy="1126.1016" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="123" x="270.11" y="1129.4482">reportDebt(): void</text><ellipse cx="261.11" cy="1142.3984" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="155" x="270.11" y="1145.7451">offerDebtRepay(): void</text><ellipse cx="261.11" cy="1158.6953" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="202" x="270.11" y="1162.042">reportBookUnavailable(): void</text><ellipse cx="261.11" cy="1174.9922" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="158" x="270.11" y="1178.3389">offerAlternatives(): void</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="270.11" y="1194.6357"> </text><ellipse cx="261.11" cy="1207.5859" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="337" x="270.11" y="1210.9326">createReservation(user_id: int, book_id: int): void</text><ellipse cx="261.11" cy="1223.8828" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="485" x="270.11" y="1227.2295">reportReservationDetails(reservation_details: ReservationDetails): void</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="270.11" y="1243.5264"> </text><ellipse cx="261.11" cy="1256.4766" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="168" x="270.11" y="1259.8232">displaySearchBox(): void</text><ellipse cx="261.11" cy="1272.7734" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="411" x="270.11" y="1276.1201">findBooks(params_dict: Map&lt;String, String&gt;): List&lt;Книга&gt;</text><ellipse cx="261.11" cy="1289.0703" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="303" x="270.11" y="1292.417">displayBooksList(books: List&lt;Книга&gt;): void</text><ellipse cx="261.11" cy="1305.3672" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="205" x="270.11" y="1308.7139">selectBook(book_id: int): void</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="270.11" y="1325.0107"> </text><ellipse cx="261.11" cy="1337.9609" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="141" x="270.11" y="1341.3076">startInventory(): void</text><ellipse cx="261.11" cy="1354.2578" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="148" x="270.11" y="1357.6045">displayOptions(): void</text><ellipse cx="261.11" cy="1370.5547" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="276" x="270.11" y="1373.9014">chooseOption(option_number: int): void</text><ellipse cx="261.11" cy="1386.8516" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="175" x="270.11" y="1390.1982">displayAddWindow(): void</text><ellipse cx="261.11" cy="1403.1484" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="342" x="270.11" y="1406.4951">addBook(params_dict: Map&lt;String, String&gt;): void</text><ellipse cx="261.11" cy="1419.4453" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="394" x="270.11" y="1422.792">confirmAddBook(params_dict: Map&lt;String, String&gt;): void</text><ellipse cx="261.11" cy="1435.7422" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="207" x="270.11" y="1439.0889">deleteBook(book_id: int): void</text><ellipse cx="261.11" cy="1452.0391" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="234" x="270.11" y="1455.3857">requestDeleteConfirmation(): void</text><ellipse cx="261.11" cy="1468.3359" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="236" x="270.11" y="1471.6826">approveDeleteConfirmation(): void</text><ellipse cx="261.11" cy="1484.6328" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="180" x="270.11" y="1487.9795">confirmDeleteBook(): void</text><ellipse cx="261.11" cy="1500.9297" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="264" x="270.11" y="1504.2764">sendBookForRepair(book_id: int): void</text><ellipse cx="261.11" cy="1517.2266" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="236" x="270.11" y="1520.5732">confirmSendBookForRepair(): void</text><ellipse cx="261.11" cy="1533.5234" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="146" x="270.11" y="1536.8701">finishInventory(): void</text></g><!--MD5=[91805a445a18aee43dcaaf311ebc7488]
+class Библиотека--><g id="elem_Библиотека"><rect codeLine="171" fill="#F1F1F1" height="488.0156" id="Библиотека" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="452" x="793.61" y="7"/><ellipse cx="970.86" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;"/><path d="M973.8288,28.6406 Q973.2506,28.9375 972.61,29.0781 Q971.9694,29.2344 971.2663,29.2344 Q968.7663,29.2344 967.4381,27.5938 Q966.1256,25.9375 966.1256,22.8125 Q966.1256,19.6875 967.4381,18.0313 Q968.7663,16.375 971.2663,16.375 Q971.9694,16.375 972.61,16.5313 Q973.2663,16.6875 973.8288,16.9844 L973.8288,19.7031 Q973.2038,19.125 972.61,18.8594 Q972.0163,18.5781 971.3913,18.5781 Q970.0475,18.5781 969.36,19.6563 Q968.6725,20.7188 968.6725,22.8125 Q968.6725,24.9063 969.36,25.9844 Q970.0475,27.0469 971.3913,27.0469 Q972.0163,27.0469 972.61,26.7813 Q973.2038,26.5 973.8288,25.9219 L973.8288,28.6406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="89" x="991.36" y="27.8467">Библиотека</text><line style="stroke:#181818;stroke-width:0.5;" x1="794.61" x2="1244.61" y1="39" y2="39"/><ellipse cx="804.61" cy="52.6484" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="129" x="813.61" y="55.9951">libraryName: String</text><ellipse cx="804.61" cy="68.9453" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="105" x="813.61" y="72.292">address: String</text><ellipse cx="804.61" cy="85.2422" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94" x="813.61" y="88.5889">phone: String</text><ellipse cx="804.61" cy="101.5391" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="119" x="813.61" y="104.8857">catalog: Каталог</text><ellipse cx="804.61" cy="117.8359" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="169" x="813.61" y="121.1826">debts: Задолженности</text><ellipse cx="804.61" cy="134.1328" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="248" x="813.61" y="137.4795">reservations: List&lt;Бронирование&gt;</text><ellipse cx="804.61" cy="150.4297" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="238" x="813.61" y="153.7764">notifications: List&lt;Уведомление&gt;</text><ellipse cx="804.61" cy="166.7266" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="223" x="813.61" y="170.0732">librarians: List&lt;Библиотекарь&gt;</text><ellipse cx="804.61" cy="183.0234" fill="none" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="179" x="813.61" y="186.3701">readers: List&lt;Читатель&gt;</text><line style="stroke:#181818;stroke-width:0.5;" x1="794.61" x2="1244.61" y1="193.6719" y2="193.6719"/><ellipse cx="804.61" cy="207.3203" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="356" x="813.61" y="210.667">updateBookStatus(book_id: int, status: String): void</text><ellipse cx="804.61" cy="223.6172" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="288" x="813.61" y="226.9639">searchBooks(query: String): List&lt;Книга&gt;</text><ellipse cx="804.61" cy="239.9141" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="401" x="813.61" y="243.2607">sendDamageList(damage_dict: Map&lt;String, String&gt;): void</text><ellipse cx="804.61" cy="256.2109" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="333" x="813.61" y="259.5576">checkReturnDate(book_id: int, user_id: int): void</text><ellipse cx="804.61" cy="272.5078" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="357" x="813.61" y="275.8545">checkBookAvailability(book_id: int, user_id: int): void</text><ellipse cx="804.61" cy="288.8047" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="262" x="813.61" y="292.1514">checkUserDebts(userID: int): boolean</text><ellipse cx="804.61" cy="305.1016" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="341" x="813.61" y="308.4482">sendNotification(notification: Уведомление): void</text><ellipse cx="804.61" cy="321.3984" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="290" x="813.61" y="324.7451">handleNoContactDetails(user_id: int): void</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="813.61" y="341.042"> </text><ellipse cx="804.61" cy="353.9922" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="337" x="813.61" y="357.3389">createReservation(user_id: int, book_id: int): void</text><ellipse cx="804.61" cy="370.2891" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="426" x="813.61" y="373.6357">addToReservationQueue(user_id: int, reservation_id: int): void</text><ellipse cx="804.61" cy="386.5859" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="422" x="813.61" y="389.9326">getReservationDetails(reservation_id: int): ReservationDetails</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="813.61" y="406.2295"> </text><ellipse cx="804.61" cy="419.1797" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="342" x="813.61" y="422.5264">addBook(params_dict: Map&lt;String, String&gt;): void</text><ellipse cx="804.61" cy="435.4766" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="207" x="813.61" y="438.8232">deleteBook(book_id: int): void</text><ellipse cx="804.61" cy="451.7734" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="356" x="813.61" y="455.1201">updateBookStatus(book_id: int, status: String): void</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="4" x="813.61" y="471.417"> </text><ellipse cx="804.61" cy="484.3672" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="226" x="813.61" y="487.7139">getBookInfo(book_id: int): Книга</text></g><!--MD5=[fd97a8665edc982d6e8afc6af9113488]
+reverse link Пользователь to Читатель--><g id="link_Пользователь_Читатель"><path codeLine="167" d="M205.82,348.29 C257.85,419.67 327.66,515.42 374.96,580.29 " fill="none" id="Пользователь-backto-Читатель" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="200.13,352.37,194,332.08,211.44,344.12,200.13,352.37" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[71a9db3204ae12e0229ba90d1912acfd]
+reverse link Пользователь to Библиотекарь--><g id="link_Пользователь_Библиотекарь"><path codeLine="168" d="M144.16,352.41 C155.42,455.41 180.31,618.81 232.61,751 C242.72,776.56 254.36,802.26 267.02,827.71 " fill="none" id="Пользователь-backto-Библиотекарь" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="137.17,352.95,142.05,332.33,151.1,351.49,137.17,352.95" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[de0bb34d588cd94eafae7fbd7b586531]
+link Каталог to Component--><g id="link_Каталог_Component"><path codeLine="206" d="M2006.39,718.28 C2009.55,751.03 2012.97,791.61 2014.61,828 C2035.31,1287.09 2017.72,1402.44 2018.61,1862 C2018.64,1876 2018.44,1890.8 2018.11,1905.29 " fill="none" id="Каталог-to-Component" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="2025.1,1905.62,2017.58,1925.43,2011.11,1905.25,2025.1,1905.62" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[b95e18bd6c1704e7aa952d3aa48d5ef4]
+link Шкаф to Component--><g id="link_Шкаф_Component"><path codeLine="207" d="M1896.34,1242.71 C1917.87,1380.11 1973.68,1736.28 2000.2,1905.55 " fill="none" id="Шкаф-to-Component" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="2007.15,1904.64,2003.33,1925.48,1993.31,1906.81,2007.15,1904.64" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[c4fa96b405da6e03b86a9873ab8a8d33]
+link Ячейка to Component--><g id="link_Ячейка_Component"><path codeLine="208" d="M1847.87,1783.12 C1876.18,1819.52 1913.78,1867.86 1946.1,1909.42 " fill="none" id="Ячейка-to-Component" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="1951.68,1905.19,1958.44,1925.28,1940.63,1913.79,1951.68,1905.19" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[96bbf6920bd2d25f1b9a1c8af654dccd]
+link Книга to Component--><g id="link_Книга_Component"><path codeLine="209" d="M1831.81,1998.5 C1836.68,1998.5 1841.55,1998.5 1846.42,1998.5 " fill="none" id="Книга-to-Component" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="1846.44,1991.5,1866.44,1998.5,1846.44,2005.5,1846.44,1991.5" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[e64bcbd15fc3faf8d2e84570dd21497c]
+reverse link Каталог to Шкаф--><g id="link_Каталог_Шкаф"><path codeLine="212" d="M1983.47,730.96 C1960.66,838.98 1919.55,1033.71 1899.4,1129.17 " fill="none" id="Каталог-backto-Шкаф" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="1986.16,718.23,1981.0063,723.2738,1983.6799,729.9709,1988.8336,724.9272,1986.16,718.23" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="1976.1423" y="738.6282">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="1876.4353" y="1118.3933">1..*</text></g><!--MD5=[d2465663192fda50c5940d67fa247d18]
+reverse link Шкаф to Ячейка--><g id="link_Шкаф_Ячейка"><path codeLine="213" d="M1877.04,1255.56 C1860.42,1363.39 1828.49,1570.54 1813.2,1669.8 " fill="none" id="Шкаф-backto-Ячейка" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="1879.04,1242.6,1874.1768,1247.9244,1877.2213,1254.4614,1882.0844,1249.1369,1879.04,1242.6" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="1869.4295" y="1262.8762">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="1789.8453" y="1659.0392">1..*</text></g><!--MD5=[8960b35fd46e5a9a0f2dc9a1a284c0fe]
+reverse link Ячейка to Книга--><g id="link_Ячейка_Книга"><path codeLine="214" d="M1770.62,1794.99 C1755.72,1824.57 1737.89,1859.96 1721.33,1892.83 " fill="none" id="Ячейка-backto-Книга" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="1776.6,1783.12,1770.3302,1786.6823,1771.2071,1793.8399,1777.4768,1790.2776,1776.6,1783.12" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="1764.4987" y="1803.3988">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="1701.2283" y="1881.9454">0..*</text></g><!--MD5=[df6ed561bc6dd3d96e619f8b645e43e8]
+reverse link Книга to Повреждение--><g id="link_Книга_Повреждение"><path codeLine="217" d="M1668.61,2117.46 C1668.61,2133.99 1668.61,2150.31 1668.61,2164.91 " fill="none" id="Книга-backto-Повреждение" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="1668.61,2104.18,1664.61,2110.18,1668.61,2116.18,1672.61,2110.18,1668.61,2104.18" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="1660.3288" y="2124.2106">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="1644.1366" y="2153.7619">0..*</text></g><!--MD5=[b133aa23ba3d1f8a820442d034e5dc71]
+reverse link Библиотека to Бронирование--><g id="link_Библиотека_Бронирование"><path codeLine="220" d="M780.39,273.65 C596.75,304.26 354.62,378.08 232.61,556 C6,886.46 161.58,1401.43 245.13,1620.82 " fill="none" id="Библиотека-backto-Бронирование" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="793.24,271.56,786.6764,268.5735,781.3952,273.4836,787.9588,276.4701,793.24,271.56" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="777.681" y="269.0573">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="218.2642" y="1609.9347">0..*</text></g><!--MD5=[48fbc84584de4c62416bdadff8a6cf3d]
+reverse link Библиотека to Уведомление--><g id="link_Библиотека_Уведомление"><path codeLine="224" d="M914.35,507.48 C907.39,524.4 900.65,540.74 894.38,555.98 " fill="none" id="Библиотека-backto-Уведомление" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="919.47,495.07,913.4839,499.0908,914.893,506.1629,920.8791,502.1421,919.47,495.07" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="908.0529" y="515.3935">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="873.5444" y="545.0239">0..*</text></g><!--MD5=[dc7cd2808a856f6c0309ea0b9122e618]
+reverse link Библиотека to Каталог--><g id="link_Библиотека_Каталог"><path codeLine="227" d="M1258.33,334.81 C1418.03,392.24 1631.8,473.05 1815.61,556 C1837.8,566.02 1861.08,577.46 1883.34,588.88 " fill="none" id="Библиотека-backto-Каталог" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="1245.96,330.37,1250.2574,336.1607,1257.2555,334.4211,1252.9581,328.6304,1245.96,330.37" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="1253.5184" y="329.7971">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="1862.1855" y="578.0395">1</text></g><!--MD5=[523752863811b48f8065060fa9a058de]
+reverse link Библиотека to Задолженности--><g id="link_Библиотека_Задолженности"><path codeLine="228" d="M1124.86,507.48 C1138.63,540.88 1151.47,572.07 1161.7,596.89 " fill="none" id="Библиотека-backto-Задолженности" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="1119.75,495.07,1118.3409,502.1421,1124.327,506.1629,1125.7361,499.0908,1119.75,495.07" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="1114.9046" y="515.3935">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="1134.2912" y="585.7393">1..*</text></g><!--MD5=[6923eeb438dec2892ea13fd193a4aaf4]
+reverse link Библиотека to Библиотекарь--><g id="link_Библиотека_Библиотекарь"><path codeLine="229" d="M784.1,442.15 C750.32,477.29 718.61,515.71 693.61,556 C677.2,582.45 640.55,700.88 603.94,827.97 " fill="none" id="Библиотека-backto-Библиотекарь" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="793.2,432.81,786.1471,434.3121,784.8209,441.4002,791.8739,439.8981,793.2,432.81" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="777.6397" y="435.5984">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="582.9751" y="816.4693">1..*</text></g><!--MD5=[fd28b60827ad5deff2e1f0f3703d8654]
+link Библиотекарь to Библиотека--><g id="link_Библиотекарь_Библиотека"><path codeLine="234" d="M761.34,1130.38 C961.1,1072.81 1225.58,960.34 1353.61,751 C1398.83,677.06 1388.65,635.27 1353.61,556 C1329.99,502.57 1291.84,454.49 1249.6,413.18 " fill="none" id="Библиотекарь-to-Библиотека" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="1245.76,409.45,1249.4252,418.5915,1249.3452,412.9352,1255.0015,412.8552,1245.76,409.45" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="78" x="1384.61" y="658.0669">использует</text></g><!--MD5=[fd28b60827ad5deff2e1f0f3703d8654]
+link Библиотекарь to Библиотека--><g id="link_Библиотекарь_Библиотека"><path codeLine="237" d="M761.33,1148.3 C991.17,1100.29 1315.8,991.81 1471.61,751 C1518.69,678.24 1512.35,632.49 1471.61,556 C1423.68,466 1335.94,397.89 1250.44,349.19 " fill="none" id="Библиотекарь-to-Библиотека-1" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="1245.85,346.59,1251.7245,354.4951,1250.2052,349.0461,1255.6542,347.5267,1245.85,346.59" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="249" x="1504.61" y="658.0669">добавляет в очередь бронирования</text></g><!--MD5=[c53368f76230023a87ee798887de6b67]
+reverse link Библиотека to Читатель--><g id="link_Библиотека_Читатель"><path codeLine="230" d="M782.28,412.56 C696.34,470.7 603.52,533.5 534.4,580.26 " fill="none" id="Библиотека-backto-Читатель" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="793.27,405.13,786.0591,405.1783,783.3302,411.8532,790.5412,411.8048,793.27,405.13" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="777.712" y="407.0101">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="23" x="520.7801" y="569.3964">1..*</text></g><!--MD5=[9980e68144e8a387b01659bde2a54ff5]
+link Читатель to Библиотекарь--><g id="link_Читатель_Библиотекарь"><path codeLine="233" d="M449.05,726.64 C453.73,744.3 458.28,763.23 461.61,781 C464.17,794.66 466.6,808.62 468.91,822.74 " fill="none" id="Читатель-to-Библиотекарь" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="469.75,827.95,472.2607,818.4265,468.9511,823.0142,464.3634,819.7047,469.75,827.95" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="133" x="464.61" y="794.0669">взаимодействует с</text></g><!--MD5=[4cd361571fa1be2ae2bc0e47a06d2ef9]
+link Библиотекарь to Читатель--><g id="link_Библиотекарь_Читатель"><path codeLine="235" d="M326.24,827.82 C323.44,817.86 320.88,807.91 318.61,798 C313.1,773.94 321.34,751.08 335.37,730.97 " fill="none" id="Библиотекарь-to-Читатель" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#181818" points="338.45,726.72,329.9277,731.6567,335.5142,730.7674,336.4035,736.3539,338.45,726.72" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="133" x="319.61" y="794.0669">взаимодействует с</text></g><!--MD5=[c691c0df1e1a4dead1ab1a635bb7b045]
+link Библиотекарь to Бронирование--><g id="link_Библиотекарь_Бронирование"><path codeLine="236" d="M361.62,1544.31 C351.37,1569.75 341.6,1594 332.72,1616.03 " fill="none" id="Библиотекарь-to-Бронирование" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="330.85,1620.69,337.9246,1613.838,332.7192,1616.0526,330.5047,1610.8472,330.85,1620.69" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="107" x="348.61" y="1587.0669">создает заявку</text></g><!--MD5=[4bc5c445f536baba11665d67314f261a]
+@startuml
+' Абстрактный класс Component для паттерна Композит
+abstract class Component {
+    +id: int
+    +name: String
+    +add(component: Component): void
+    +remove(component: Component): void
+    +getChild(id: int): Component
+    +operation(): void
+}
+
+' Классы Composite, наследующиеся от Component
+class Каталог {
+    +shelves: List<Component>
+    +searchBooks(query: String): List<Книга>
+    +addShelf(shelf: Шкаф): void
+    +removeShelf(shelf_id: int): void
+    +operation(): void
+}
+
+class Шкаф {
+    +cells: List<Component>
+    +addCell(cell: Ячейка): void
+    +removeCell(cell_id: int): void
+    +operation(): void
+}
+
+class Ячейка {
+    +books: List<Component>
+    +addBook(book: Книга): void
+    +removeBook(book_id: int): void
+    +operation(): void
+}
+
+' Класс Leaf, наследующийся от Component
+class Книга {
+    +book_id: int
+    +title: String
+    +author: String
+    +status: String
+    +location: Ячейка
+    +damages: List<Повреждение>
+    
+    +updateStatus(status: String): void
+    +addDamage(damage: Повреждение): void
+    +removeDamage(damage_id: int): void
+    +operation(): void
+}
+
+' Класс Leaf для Повреждения без наследования от Component
+class Повреждение {
+    +damage_id: int
+    +description: String
+    +cost: float
+    
+    +operation(): void
+}
+
+' Новый класс Уведомление
+class Уведомление {
+    +notification_id: int
+    +user_id: int
+    +book_id: int
+    +type: String
+    +message: String
+    +date: Date
+    +status: String
+    
+    +sendNotification(): void
+    +scheduleNotification(date: Date): void
+}
+
+' Новый класс Бронирование
+class Бронирование {
+    +reservation_id: int
+    +user_id: int
+    +book_id: int
+    +reservation_date: Date
+    +expected_return_date: Date
+    +status: String
+    
+    +createReservation(user_id: int, book_id: int): void
+    +addToReservationQueue(user_id: int, reservation_id: int): void
+    +getReservationDetails(reservation_id: int): ReservationDetails
+    +updateStatus(new_status: String): void
+}
+
+' Класс Задолженности
+class Задолженности {
+    +user_id: int
+    +fine_amount: float
+    
+    +addFine(user_id: int, amount: float): void
+    +getDebt(user_id: int): float
+}
+
+' Базовый класс Пользователь
+class Пользователь {
+    +user_id: int
+    +name: String
+    +email: String
+    +contact_info: String
+    +register(): void
+    +login(): void
+    +logout(): void
+}
+
+' Класс Читатель наследуется от Пользователь
+class Читатель {
+    +borrowedBooks: List<Книга>
+    +fines: float
+    
+    +giveBookToReturn(book_id: int): void
+    +requestBookIssue(): void
+    +chooseAlternative(alternative_number: int): void
+    +reserveBook(book_id: int): void
+}
+
+' Класс Библиотекарь наследуется от Пользователь
+class Библиотекарь {
+    +employeeId: int
+    +workStart: Date
+    +workEnd: Date
+    +library: Библиотека
+    
+    +checkBookCondition(book_id: int): boolean
+    +reportOverdue(user_id: int): void
+    +calculateOverdueFine(days_overdue: int): float
+    +reportFine(user_id: int, fine_amount: float): void
+    +addFineToUser(user_id: int, fine_amount: float): void
+    +reportDamage(user_id: int): void
+    +calculateDamageFine(book_id: int): float
+    +reportDamageFine(user_id: int, fine_amount: float): void
+    +fixIssue(userID: int, date_issue: Date, return_period: int): void
+    +giveBook(book_id: int): void
+    +blockIssue(userID: int): void
+    +reportDebt(): void
+    +offerDebtRepay(): void
+    +reportBookUnavailable(): void
+    +offerAlternatives(): void
+    
+    ' Добавленные методы для бронирования
+    +createReservation(user_id: int, book_id: int): void
+    +reportReservationDetails(reservation_details: ReservationDetails): void
+    
+    ' Добавленные методы для поиска и выбора книг
+    +displaySearchBox(): void
+    +findBooks(params_dict: Map<String, String>): List<Книга>
+    +displayBooksList(books: List<Книга>): void
+    +selectBook(book_id: int): void
+    
+    ' Добавленные методы для инвентаризации
+    +startInventory(): void
+    +displayOptions(): void
+    +chooseOption(option_number: int): void
+    +displayAddWindow(): void
+    +addBook(params_dict: Map<String, String>): void
+    +confirmAddBook(params_dict: Map<String, String>): void
+    +deleteBook(book_id: int): void
+    +requestDeleteConfirmation(): void
+    +approveDeleteConfirmation(): void
+    +confirmDeleteBook(): void
+    +sendBookForRepair(book_id: int): void
+    +confirmSendBookForRepair(): void
+    +finishInventory(): void
+}
+
+Пользователь <|- - Читатель
+Пользователь <|- - Библиотекарь
+
+' Класс Библиотека
+class Библиотека {
+    +libraryName: String
+    +address: String
+    +phone: String
+    +catalog: Каталог
+    +debts: Задолженности
+    +reservations: List<Бронирование>
+    +notifications: List<Уведомление>
+    +librarians: List<Библиотекарь>
+    +readers: List<Читатель>
+    
+    +updateBookStatus(book_id: int, status: String): void
+    +searchBooks(query: String): List<Книга>
+    +sendDamageList(damage_dict: Map<String, String>): void
+    +checkReturnDate(book_id: int, user_id: int): void
+    +checkBookAvailability(book_id: int, user_id: int): void
+    +checkUserDebts(userID: int): boolean
+    +sendNotification(notification: Уведомление): void
+    +handleNoContactDetails(user_id: int): void
+    
+    ' Добавленные методы для бронирования
+    +createReservation(user_id: int, book_id: int): void
+    +addToReservationQueue(user_id: int, reservation_id: int): void
+    +getReservationDetails(reservation_id: int): ReservationDetails
+    
+    ' Добавленные методы для инвентаризации
+    +addBook(params_dict: Map<String, String>): void
+    +deleteBook(book_id: int): void
+    +updateBookStatus(book_id: int, status: String): void
+    
+    ' Добавленный метод для получения информации о книге
+    +getBookInfo(book_id: int): Книга
+}
+
+' Класс Каталог наследуется от Component
+Каталог -|> Component
+Шкаф -|> Component
+Ячейка -|> Component
+Книга -|> Component
+
+' Ассоциации между классами Composite
+Каталог "1" o- - "1..*" Шкаф
+Шкаф "1" o- - "1..*" Ячейка
+Ячейка "1" o- - "0..*" Книга
+
+' Ассоциации между Книгой и Повреждением
+Книга "1" *- - "0..*" Повреждение
+
+' Ассоциации между Библиотекой и Бронированием
+Библиотека "1" o- - "0..*" Бронирование
+
+
+' Ассоциации между Библиотекой и Уведомлениями
+Библиотека "1" o- - "0..*" Уведомление
+
+' Ассоциации других классов
+Библиотека "1" o- - "1" Каталог
+Библиотека "1" o- - "1..*" Задолженности
+Библиотека "1" o- - "1..*" Библиотекарь
+Библиотека "1" o- - "1..*" Читатель
+
+' Взаимодействия между классами
+Читатель ..> Библиотекарь : взаимодействует с
+Библиотекарь - -> Библиотека : использует
+Библиотекарь ..> Читатель : взаимодействует с
+Библиотекарь - -> Бронирование : создает заявку
+Библиотекарь - -> Библиотека : добавляет в очередь бронирования
+@enduml
+
+@startuml
+abstract class Component {
+    +id: int
+    +name: String
+    +add(component: Component): void
+    +remove(component: Component): void
+    +getChild(id: int): Component
+    +operation(): void
+}
+
+class Каталог {
+    +shelves: List<Component>
+    +searchBooks(query: String): List<Книга>
+    +addShelf(shelf: Шкаф): void
+    +removeShelf(shelf_id: int): void
+    +operation(): void
+}
+
+class Шкаф {
+    +cells: List<Component>
+    +addCell(cell: Ячейка): void
+    +removeCell(cell_id: int): void
+    +operation(): void
+}
+
+class Ячейка {
+    +books: List<Component>
+    +addBook(book: Книга): void
+    +removeBook(book_id: int): void
+    +operation(): void
+}
+
+class Книга {
+    +book_id: int
+    +title: String
+    +author: String
+    +status: String
+    +location: Ячейка
+    +damages: List<Повреждение>
+    
+    +updateStatus(status: String): void
+    +addDamage(damage: Повреждение): void
+    +removeDamage(damage_id: int): void
+    +operation(): void
+}
+
+class Повреждение {
+    +damage_id: int
+    +description: String
+    +cost: float
+    
+    +operation(): void
+}
+
+class Уведомление {
+    +notification_id: int
+    +user_id: int
+    +book_id: int
+    +type: String
+    +message: String
+    +date: Date
+    +status: String
+    
+    +sendNotification(): void
+    +scheduleNotification(date: Date): void
+}
+
+class Бронирование {
+    +reservation_id: int
+    +user_id: int
+    +book_id: int
+    +reservation_date: Date
+    +expected_return_date: Date
+    +status: String
+    
+    +createReservation(user_id: int, book_id: int): void
+    +addToReservationQueue(user_id: int, reservation_id: int): void
+    +getReservationDetails(reservation_id: int): ReservationDetails
+    +updateStatus(new_status: String): void
+}
+
+class Задолженности {
+    +user_id: int
+    +fine_amount: float
+    
+    +addFine(user_id: int, amount: float): void
+    +getDebt(user_id: int): float
+}
+
+class Пользователь {
+    +user_id: int
+    +name: String
+    +email: String
+    +contact_info: String
+    +register(): void
+    +login(): void
+    +logout(): void
+}
+
+class Читатель {
+    +borrowedBooks: List<Книга>
+    +fines: float
+    
+    +giveBookToReturn(book_id: int): void
+    +requestBookIssue(): void
+    +chooseAlternative(alternative_number: int): void
+    +reserveBook(book_id: int): void
+}
+
+class Библиотекарь {
+    +employeeId: int
+    +workStart: Date
+    +workEnd: Date
+    +library: Библиотека
+    
+    +checkBookCondition(book_id: int): boolean
+    +reportOverdue(user_id: int): void
+    +calculateOverdueFine(days_overdue: int): float
+    +reportFine(user_id: int, fine_amount: float): void
+    +addFineToUser(user_id: int, fine_amount: float): void
+    +reportDamage(user_id: int): void
+    +calculateDamageFine(book_id: int): float
+    +reportDamageFine(user_id: int, fine_amount: float): void
+    +fixIssue(userID: int, date_issue: Date, return_period: int): void
+    +giveBook(book_id: int): void
+    +blockIssue(userID: int): void
+    +reportDebt(): void
+    +offerDebtRepay(): void
+    +reportBookUnavailable(): void
+    +offerAlternatives(): void
+    
+    +createReservation(user_id: int, book_id: int): void
+    +reportReservationDetails(reservation_details: ReservationDetails): void
+    
+    +displaySearchBox(): void
+    +findBooks(params_dict: Map<String, String>): List<Книга>
+    +displayBooksList(books: List<Книга>): void
+    +selectBook(book_id: int): void
+    
+    +startInventory(): void
+    +displayOptions(): void
+    +chooseOption(option_number: int): void
+    +displayAddWindow(): void
+    +addBook(params_dict: Map<String, String>): void
+    +confirmAddBook(params_dict: Map<String, String>): void
+    +deleteBook(book_id: int): void
+    +requestDeleteConfirmation(): void
+    +approveDeleteConfirmation(): void
+    +confirmDeleteBook(): void
+    +sendBookForRepair(book_id: int): void
+    +confirmSendBookForRepair(): void
+    +finishInventory(): void
+}
+
+Пользователь <|- - Читатель
+Пользователь <|- - Библиотекарь
+
+class Библиотека {
+    +libraryName: String
+    +address: String
+    +phone: String
+    +catalog: Каталог
+    +debts: Задолженности
+    +reservations: List<Бронирование>
+    +notifications: List<Уведомление>
+    +librarians: List<Библиотекарь>
+    +readers: List<Читатель>
+    
+    +updateBookStatus(book_id: int, status: String): void
+    +searchBooks(query: String): List<Книга>
+    +sendDamageList(damage_dict: Map<String, String>): void
+    +checkReturnDate(book_id: int, user_id: int): void
+    +checkBookAvailability(book_id: int, user_id: int): void
+    +checkUserDebts(userID: int): boolean
+    +sendNotification(notification: Уведомление): void
+    +handleNoContactDetails(user_id: int): void
+    
+    +createReservation(user_id: int, book_id: int): void
+    +addToReservationQueue(user_id: int, reservation_id: int): void
+    +getReservationDetails(reservation_id: int): ReservationDetails
+    
+    +addBook(params_dict: Map<String, String>): void
+    +deleteBook(book_id: int): void
+    +updateBookStatus(book_id: int, status: String): void
+    
+    +getBookInfo(book_id: int): Книга
+}
+
+Каталог -|> Component
+Шкаф -|> Component
+Ячейка -|> Component
+Книга -|> Component
+
+Каталог "1" o- - "1..*" Шкаф
+Шкаф "1" o- - "1..*" Ячейка
+Ячейка "1" o- - "0..*" Книга
+
+Книга "1" *- - "0..*" Повреждение
+
+Библиотека "1" o- - "0..*" Бронирование
+
+
+Библиотека "1" o- - "0..*" Уведомление
+
+Библиотека "1" o- - "1" Каталог
+Библиотека "1" o- - "1..*" Задолженности
+Библиотека "1" o- - "1..*" Библиотекарь
+Библиотека "1" o- - "1..*" Читатель
+
+Читатель ..> Библиотекарь : взаимодействует с
+Библиотекарь - -> Библиотека : использует
+Библиотекарь ..> Читатель : взаимодействует с
+Библиотекарь - -> Бронирование : создает заявку
+Библиотекарь - -> Библиотека : добавляет в очередь бронирования
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 17:01:30 UTC 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>
