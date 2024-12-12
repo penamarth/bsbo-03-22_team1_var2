@@ -942,6 +942,96 @@ public class Program
 {
     public static void Main(string[] args)
     {
+      
+        Library library = new Library
+        {
+            LibraryName = "Городская библиотека",
+            Address = "ул. Примерная, д. 1",
+            Phone = "123-456-7890"
+        };
+
+       
+        Catalog catalog = library.Catalog;
+        catalog.Id = 1;
+        catalog.Name = "Основной каталог";
+
+       
+        Shelf shelf1 = new Shelf { Id = 101, Name = "Шкаф A" };
+        Shelf shelf2 = new Shelf { Id = 102, Name = "Шкаф B" };
+        catalog.AddShelf(shelf1);
+        catalog.AddShelf(shelf2);
+
         
+        Cell cell1 = new Cell { Id = 201, Name = "Ячейка 1" };
+        Cell cell2 = new Cell { Id = 202, Name = "Ячейка 2" };
+        shelf1.AddCell(cell1);
+        shelf1.AddCell(cell2);
+
+        
+        Book book1 = new Book { BookId = 301, Title = "Война и мир", Author = "Лев Толстой", Status = "Available" };
+        Book book2 = new Book { BookId = 302, Title = "Преступление и наказание", Author = "Федор Достоевский", Status = "Available" };
+        library.AddBookToCatalog(book1);
+        library.AddBookToCatalog(book2);
+
+
+        Reader reader = new Reader
+        {
+            UserId = 401,
+            Name = "Иван Иванов",
+            Email = "ivan@example.com",
+            ContactInfo = "555-1234"
+        };
+        library.Readers.Add(reader);
+        reader.Register();
+        reader.Login();
+
+
+        Librarian librarian = new Librarian
+        {
+            UserId = 501,
+            Name = "Мария Петрова",
+            Email = "maria@example.com",
+            ContactInfo = "555-5678",
+            EmployeeId = 601,
+            WorkStart = DateTime.Now.AddHours(-8),
+            WorkEnd = DateTime.Now.AddHours(8),
+            Library = library
+        };
+        library.Librarians.Add(librarian);
+        librarian.Register();
+        librarian.Login();
+
+        Logger.Log("Program", nameof(Main), "--- Начало операций ---");
+
+
+        librarian.GiveBook(301, reader, library);
+
+
+        reader.GiveBookToReturn(301, library);
+
+     
+        reader.RequestBookIssue(302, library);
+
+        librarian.CheckBookCondition(302, library);
+
+     
+        librarian.AddFineToUser(401, 20, library);
+
+
+        reader.ReserveBook(303, library); 
+
+   
+        Dictionary<string, string> searchParams = new Dictionary<string, string>
+        {
+            { "query", "Война" }
+        };
+        List<Book> foundBooks = librarian.FindBooks(searchParams, library);
+        librarian.DisplayBooksList(foundBooks);
+
+
+        reader.Logout();
+        librarian.Logout();
+
+        Logger.Log("Program", nameof(Main), "--- Завершение операций ---");
     }
 }
