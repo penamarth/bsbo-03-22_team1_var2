@@ -86,15 +86,6 @@ class Бронирование {
     +updateStatus(new_status: String): void
 }
 
-' Новый класс ReservationDetails для деталей бронирования
-class ReservationDetails {
-    +reservation_id: int
-    +expected_date: Date
-    +status: String
-    
-    +updateStatus(new_status: String): void
-}
-
 ' Класс Задолженности
 class Задолженности {
     +user_id: int
@@ -230,8 +221,6 @@ class Библиотека {
 ' Ассоциации между Библиотекой и Бронированием
 Библиотека "1" o-- "0..*" Бронирование
 
-' Ассоциации между Бронированием и ReservationDetails
-Бронирование "1" --> "1" ReservationDetails
 
 ' Ассоциации между Библиотекой и Уведомлениями
 Библиотека "1" o-- "0..*" Уведомление
@@ -248,6 +237,4 @@ class Библиотека {
 Библиотекарь ..> Читатель : взаимодействует с
 Библиотекарь --> Бронирование : создает заявку
 Библиотекарь --> Библиотека : добавляет в очередь бронирования
-Бронирование --> ReservationDetails : содержит детали
-
 @enduml
