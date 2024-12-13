@@ -493,8 +493,9 @@ public class Reader : User
         if (book != null && BorrowedBooks.Contains(book))
         {
             // Проверка книги на наличие повреждений
-            if (book.Damages.Count == 0)
+            if (library.Librarians[0].CheckBookCondition(bookId, book, library))
             {
+                Logger.Log("Reader", nameof(GiveBookToReturn), $"Книга '{book.Title}' возвращена без повреждений.");
                 book.UpdateStatus("Available");
                 BorrowedBooks.Remove(book);
                 float debt = library.Debts.GetDebt(UserId); // Проверка задолженностей
@@ -540,9 +541,7 @@ public class Reader : User
             float debt = library.Debts.GetDebt(UserId);
             if (debt == 0)
             {
-                book.UpdateStatus("Issued");
-                BorrowedBooks.Add(book);
-                Logger.Log("Reader", nameof(RequestBookIssue), $"Книга '{book.Title}' успешно выдана.");
+                Logger.Log("Reader", nameof(RequestBookIssue), $"Запрос на выдачу книги '{book.Title}' успешно сделан.");
 
             }
             else
@@ -589,35 +588,38 @@ public class Reader : User
         }
         else if (book.Status != "Available")
         {
-            Reservation reservation = new Reservation
+         
+            library.Librarians[0].CreateReservation(UserId, bookId, library);
+            // Отправка уведомления о бронировании
+            Notification notification1 = new Notification
             {
-                ReservationId = library.GenerateReservationId(),
+                NotificationId = library.GenerateNotificationId(),
                 UserId = UserId,
                 BookId = bookId,
-                Status = "Active"
+                Type = "Reservation Confirmation",
+                Message = $"Вы успешно забронировали книгу с ID {bookId}. Ожидайте доступности.",
+                Date = DateTime.Now,
+                Status = "Sent"
             };
-            reservation.CreateReservation(UserId, bookId);
-            library.Reservations.Add(reservation);
+            library.SendNotification(notification1);
             Logger.Log("Reader", nameof(ReserveBook), $"Книга '{book.Title}' зарезервирована.");
-            // Добавление в очередь бронирования
-            reservation.AddToReservationQueue(UserId, reservation.ReservationId);
-
-            // Отправка уведомления о бронировании
+           
+        }
+        else
+        {
+            library.Librarians[0].CreateReservation(UserId, bookId, library);
+            Logger.Log("Reader", nameof(ReserveBook), $"Книга '{book.Title}' доступна и может быть выдана.");
             Notification notification = new Notification
             {
                 NotificationId = library.GenerateNotificationId(),
                 UserId = UserId,
                 BookId = bookId,
                 Type = "Reservation Confirmation",
-                Message = $"Вы успешно забронировали книгу '{book.Title}'. Ожидайте доступности.",
+                Message = $"Книга '{book.Title}' ожидает вас.",
                 Date = DateTime.Now,
                 Status = "Sent"
             };
             library.SendNotification(notification);
-        }
-        else
-        {
-            Logger.Log("Reader", nameof(ReserveBook), $"Книга '{book.Title}' доступна и может быть выдана.");
         }
     }
 
@@ -640,22 +642,20 @@ public class Librarian : User
     /// <summary>
     /// Проверяет состояние книги.
     /// </summary>
-    public bool CheckBookCondition(int bookId, Library library)
+    public bool CheckBookCondition(int bookId,Book book, Library library)
     {
         Logger.Log("Librarian", nameof(CheckBookCondition), $"Проверка состояния книги с ID {bookId}.");
-        Book book = library.GetBookById(bookId);
         if (book != null)
         {
-            //если книга помечена как "Damaged", то есть повреждения
-            if (book.Status == "Damaged")
+            if (book.Damages.Count == 0)
             {
-                Logger.Log("Librarian", nameof(CheckBookCondition), $"Книга '{book.Title}' повреждена.");
-                return false;
+                Logger.Log("Librarian", nameof(CheckBookCondition), $"Книга '{book.Title}' не повреждена.");
+                return true;
             }
             else
             {
-                Logger.Log("Librarian", nameof(CheckBookCondition), $"Книга '{book.Title}' находится в хорошем состоянии.");
-                return true;
+                Logger.Log("Librarian", nameof(CheckBookCondition), $"Книга '{book.Title}' повреждена.");
+                return false;
             }
         }
         Logger.Log("Librarian", nameof(CheckBookCondition), $"Книга с ID {bookId} не найдена.");
@@ -808,18 +808,6 @@ public class Librarian : User
         library.Reservations.Add(reservation);
         Logger.Log("Librarian", nameof(CreateReservation), $"Бронирование создано с ID {reservation.ReservationId}.");
 
-        // Отправка уведомления о бронировании
-        Notification notification = new Notification
-        {
-            NotificationId = library.GenerateNotificationId(),
-            UserId = userId,
-            BookId = bookId,
-            Type = "Reservation Confirmation",
-            Message = $"Вы успешно забронировали книгу с ID {bookId}. Ожидайте доступности.",
-            Date = DateTime.Now,
-            Status = "Sent"
-        };
-        library.SendNotification(notification);
     }
 
     public void ReportReservationDetails(ReservationDetails reservationDetails)
@@ -891,11 +879,6 @@ public class Librarian : User
                         { "genre", "Роман" }
                     };
                     AddBook(newBookParams, Library);
-                    break;
-
-                case InventoryOption.DeleteBook:
-                    // Вариант B: Списать книгу
-                    Logger.Log("Librarian", nameof(StartInventory), "Выбран вариант B: Списать книгу.");
                     Dictionary<string, string> bookToDeleteParams = new Dictionary<string, string>
                     {
                         { "title", "Старик и море" },
@@ -904,6 +887,11 @@ public class Librarian : User
                         { "genre", "Роман" }
                     };
                     AddBook(bookToDeleteParams, Library);
+                    break;
+
+                case InventoryOption.DeleteBook:
+                    // Вариант B: Списать книгу
+                    Logger.Log("Librarian", nameof(StartInventory), "Выбран вариант B: Списать книгу.");
                     // Поиск книги для списания
                     List<Book> booksToDelete = Library.SearchBooks(new Dictionary<string, string> { { "query", "Старик и море" } });
                     if (booksToDelete.Count > 0)
@@ -1246,8 +1234,14 @@ public class Program
         // Создание ячеек
         Cell cell1 = new Cell { Id = 201, Name = "Ячейка 1" };
         Cell cell2 = new Cell { Id = 202, Name = "Ячейка 2" };
+        Cell cell3 = new Cell { Id = 203, Name = "Ячейка 3" };
+        Cell cell4 = new Cell { Id = 204, Name = "Ячейка 4" };
+        Cell cell5 = new Cell { Id = 205, Name = "Ячейка 5" };
         shelf1.AddCell(cell1);
         shelf1.AddCell(cell2);
+        shelf2.AddCell(cell3);
+        shelf2.AddCell(cell4);
+        shelf2.AddCell(cell5);
 
         // Создание книг
         Book book1 = new Book { BookId = 301, Title = "Война и мир", Author = "Лев Толстой", Status = "Available" };
@@ -1286,20 +1280,21 @@ public class Program
         Logger.Log("\nProgram", nameof(Main), "------ Начало операций ------");
         // 1. Выдача книги 
         Logger.Log("Program", nameof(Main), "------ Выдача книги  ------");
+        reader.RequestBookIssue(301, library);
+        reader.RequestBookIssue(302, library);
         librarian.GiveBook(301, reader, library);
+        librarian.GiveBook(302, reader, library);
 
         // 2. Возврат книги 
         Logger.Log("\nProgram", nameof(Main), "------ Возврат книги ------");
         reader.GiveBookToReturn(301, library);
 
         // 3. Заказ книги 
-        // Сначала добавим книгу для демонстрации заказа
-        Logger.Log("\nProgram", nameof(Main), "------ Заказ книги  ------");
+        Logger.Log("\nProgram", nameof(Main), "------ заказ книги  ------");
         Book book3 = new Book { BookId = 303, Title = "Анна Каренина", Author = "Лев Толстой", Status = "Available" };
         library.AddBookToCatalog(book3);
-
-        // Теперь бронируем существующую книгу
-        reader.ReserveBook(303, library);
+        reader.ReserveBook(301, library);
+        reader.ReserveBook(302, library);
 
         // 4. Поиск книги 
         Logger.Log("\nProgram", nameof(Main), "------ Поиск книги ------");
@@ -1339,7 +1334,7 @@ public class Program
 
         //// 1. Возврат книги с повреждениями
         //// Предварительно выдать книгу
-        //librarian.GiveBook(302, reader, library);
+        //librarian.GiveBook(301, reader, library);
         //// Добавить повреждение перед возвратом
         //Book damagedBookReturn = library.GetBookById(302);
         //if (damagedBookReturn != null)
@@ -1360,7 +1355,7 @@ public class Program
         //librarian.GiveBook(303, reader, library);
 
         //librarian.AddFineToUser(reader.UserId, 50, library);
-   
+
         //reader.GiveBookToReturn(303, library);
 
         //// 3 Выдача книги пользователю с задолженностью
