@@ -45,3 +45,214 @@
 
 
 Пример: https://gitlab.com/penamarth/pos.git ))
+
+
+
+```
+Catalog:AddShelf:Добавлен шкаф с ID 101
+
+Catalog:AddShelf:Добавлен шкаф с ID 102
+
+Shelf:AddCell:Добавлена ячейка с ID 201
+
+Shelf:AddCell:Добавлена ячейка с ID 202
+
+Shelf:AddCell:Добавлена ячейка с ID 203
+
+Shelf:AddCell:Добавлена ячейка с ID 204
+
+Shelf:AddCell:Добавлена ячейка с ID 205
+
+Library:AddBookToCatalog:Добавление книги 'Война и мир' в каталог.
+
+Cell:AddBook:Добавлена книга с ID 301
+
+Library:AddBookToCatalog:Книга 'Война и мир' добавлена в ячейку 'Ячейка 1' шкафа '101'.
+
+Library:AddBookToCatalog:Добавление книги 'Преступление и наказание' в каталог.
+
+Cell:AddBook:Добавлена книга с ID 302
+
+Library:AddBookToCatalog:Книга 'Преступление и наказание' добавлена в ячейку 'Ячейка 2' шкафа '101'.
+
+Reader:Register:Регистрация.
+
+User:Login:Вход в систему.
+
+Librarian:Register:Регистрация.
+
+User:Login:Вход в систему.
+
+
+Program:Main:------ Начало операций ------
+Program:Main:------ Выдача книги  ------
+
+Reader:RequestBookIssue:Запрос на выдачу книги с ID 301.
+
+Library:GetBookById:Найдена книга 'Война и мир' с ID 301.
+
+Debts:GetDebt:Пользователь 401 не имеет задолженностей.
+
+Reader:RequestBookIssue:Запрос на выдачу книги 'Война и мир' успешно сделан.
+
+Reader:RequestBookIssue:Запрос на выдачу книги с ID 302.
+
+Library:GetBookById:Найдена книга 'Преступление и наказание' с ID 302.
+
+Debts:GetDebt:Пользователь 401 не имеет задолженностей.
+
+Reader:RequestBookIssue:Запрос на выдачу книги 'Преступление и наказание' успешно сделан.
+
+Librarian:GiveBook:Выдача книги с ID 301 читателю Иван Иванов.
+
+Library:GetBookById:Найдена книга 'Война и мир' с ID 301.
+
+Debts:GetDebt:Пользователь 401 не имеет задолженностей.
+
+Book:UpdateStatus:Обновление статуса с 'Available' на 'Issued'.
+
+Librarian:GiveBook:Книга 'Война и мир' выдана читателю Иван Иванов.
+
+Librarian:GiveBook:Выдача книги с ID 302 читателю Иван Иванов.
+
+Library:GetBookById:Найдена книга 'Преступление и наказание' с ID 302.
+
+Debts:GetDebt:Пользователь 401 не имеет задолженностей.
+
+Book:UpdateStatus:Обновление статуса с 'Available' на 'Issued'.
+
+Librarian:GiveBook:Книга 'Преступление и наказание' выдана читателю Иван Иванов.
+
+Program:Main:------ Возврат книги ------
+
+Reader:GiveBookToReturn:Сдача книги с ID 301.
+
+Library:GetBookById:Найдена книга 'Война и мир' с ID 301.
+
+Librarian:CheckBookCondition:Проверка состояния книги с ID 301.
+
+Librarian:CheckBookCondition:Книга 'Война и мир' не повреждена.
+
+Reader:GiveBookToReturn:Книга 'Война и мир' возвращена без повреждений.
+
+Book:UpdateStatus:Обновление статуса с 'Issued' на 'Available'.
+
+Debts:GetDebt:Пользователь 401 не имеет задолженностей.
+
+Reader:GiveBookToReturn:Книга 'Война и мир' успешно возвращена.
+
+
+Program:Main:------ заказ книги  ------
+
+Library:AddBookToCatalog:Добавление книги 'Анна Каренина' в каталог.
+
+Cell:AddBook:Добавлена книга с ID 303
+
+Library:AddBookToCatalog:Книга 'Анна Каренина' добавлена в ячейку 'Ячейка 3' шкафа '102'.
+
+Reader:ReserveBook:Бронирование книги с ID 301.
+
+Library:GetBookById:Найдена книга 'Война и мир' с ID 301.
+
+Librarian:CreateReservation:Создание бронирования для пользователя 401 на книгу 301.
+
+Reservation:CreateReservation:Создано бронирование для пользователя 401 на книгу 301.
+
+Librarian:CreateReservation:Бронирование создано с ID 2000.
+
+Reader:ReserveBook:Книга 'Война и мир' доступна и может быть выдана.
+
+Notification:SendNotification:Отправлено уведомление 'Книга 'Война и мир' ожидает вас.' пользователю с ID 401 по книге ID 301.
+
+Reader:ReserveBook:Бронирование книги с ID 302.
+
+Library:GetBookById:Найдена книга 'Преступление и наказание' с ID 302.
+
+Librarian:CreateReservation:Создание бронирования для пользователя 401 на книгу 302.
+
+Reservation:CreateReservation:Создано бронирование для пользователя 401 на книгу 302.
+
+Librarian:CreateReservation:Бронирование создано с ID 2001.
+
+Notification:SendNotification:Отправлено уведомление 'Вы успешно забронировали книгу с ID 302. Ожидайте доступности.' пользователю с ID 401 по книге ID 302.
+
+Reader:ReserveBook:Книга 'Преступление и наказание' зарезервирована.
+
+Program:Main:------ Поиск книги ------
+
+Librarian:FindBooks:Поиск книг с параметрами.
+
+Library:SearchBooks:Поиск книг по запросу 'Война'.
+
+Library:SearchBooks:Найдена книга 'Война и мир' авторства 'Лев Толстой' с ID 301.
+
+Librarian:DisplayBooksList:Отображение списка книг.
+
+Librarian:DisplayBooksList:- Война и мир by Лев Толстой (ID: 301, Status: Available)
+
+Program:Main:------ Уведомление ------
+
+Notification:SendNotification:Отправлено уведомление 'Срок возврата книги 'Преступление и наказание' истекает завтра.' пользователю с ID 401 по книге ID 302.
+
+
+Program:Main:------ Инвентаризация  ------
+
+Librarian:StartInventory:Начало инвентаризации с 3 опциями.
+
+Librarian:StartInventory:Выбран вариант A: Добавить новую книгу.
+
+Librarian:AddBook:Добавление книги 'Анна Каренина' автора 'Лев Толстой'.
+
+Library:AddBookToCatalog:Добавление книги 'Анна Каренина' в каталог.
+
+Cell:AddBook:Добавлена книга с ID 1000
+
+Library:AddBookToCatalog:Книга 'Анна Каренина' добавлена в ячейку 'Ячейка 4' шкафа '102'.
+
+Librarian:AddBook:Книга 'Анна Каренина' добавлена в каталог с ID 1000.
+
+Librarian:AddBook:Добавление книги 'Старик и море' автора 'Эрнест Хемингуэй'.
+
+Library:AddBookToCatalog:Добавление книги 'Старик и море' в каталог.
+
+Cell:AddBook:Добавлена книга с ID 1001
+
+Library:AddBookToCatalog:Книга 'Старик и море' добавлена в ячейку 'Ячейка 5' шкафа '102'.
+
+Librarian:AddBook:Книга 'Старик и море' добавлена в каталог с ID 1001.
+
+Librarian:StartInventory:Выбран вариант B: Списать книгу.
+
+Library:SearchBooks:Поиск книг по запросу 'Старик и море'.
+
+Library:SearchBooks:Найдена книга 'Старик и море' авторства 'Эрнест Хемингуэй' с ID 1001.
+
+Librarian:DeleteBook:Удаление книги с ID 1001.
+
+Library:DeleteBookFromCatalog:Удаление книги с ID 1001 из каталога.
+
+Cell:RemoveBook:Удалена книга с ID 1001
+
+Library:DeleteBookFromCatalog:Книга с ID 1001 удалена из ячейки 'Ячейка 5' шкафа 'Шкаф B'.
+
+Librarian:StartInventory:Выбран вариант C: Отправить поврежденную книгу на ремонт.
+
+Library:GetBookById:Найдена книга 'Преступление и наказание' с ID 302.
+
+Book:AddDamage:Добавлено повреждение 'Разорванные страницы' стоимостью 30.
+
+Librarian:SendBookForRepair:Отправка книги с ID 302 на ремонт.
+
+Library:GetBookById:Найдена книга 'Преступление и наказание' с ID 302.
+
+Book:UpdateStatus:Обновление статуса с 'Issued' на 'Under Repair'.
+
+Librarian:SendBookForRepair:Книга 'Преступление и наказание' отправлена на ремонт.
+
+Librarian:FinishInventory:Завершение инвентаризации.
+
+User:Logout:Выход из системы.
+
+User:Logout:Выход из системы.
+
+```

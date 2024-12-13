@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="880px" preserveAspectRatio="none" style="width:634px;height:880px;background:#FFFFFF;" version="1.1" viewBox="0 0 634 880" width="634px" zoomAndPan="magnify"><defs/><g><!--MD5=[d2665606dbe99a29508150a4f203c893]
+cluster Библиотека--><g id="cluster_Библиотека"><rect fill="none" height="777" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;" width="266" x="362" y="88.8"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="98" x="446" y="103.7951">Библиотека</text></g><g id="elem_UC1"><ellipse cx="494.8049" cy="140.861" fill="#F1F1F1" rx="70.8049" ry="16.561" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="95" x="444.3049" y="144.6085">Регистрация</text></g><g id="elem_UC2"><ellipse cx="494.8536" cy="519.6707" fill="#F1F1F1" rx="77.3536" ry="17.8707" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="112" x="436.1333" y="523.3454">Вход в систему</text></g><g id="elem_UC3"><ellipse cx="494.7655" cy="207.8531" fill="#F1F1F1" rx="65.7655" ry="15.5531" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="81" x="451.2655" y="211.6007">Поиск книг</text></g><g id="elem_UC4"><ellipse cx="495.0118" cy="357.7024" fill="#F1F1F1" rx="95.0118" ry="21.4024" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="153" x="418.5118" y="360.549">Бронирование книги</text></g><g id="elem_UC5"><ellipse cx="495.0271" cy="440.6054" fill="#F1F1F1" rx="117.0271" ry="25.8054" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="201" x="394.5271" y="443.4521">Оформление выдачи книги</text></g><g id="elem_UC6"><ellipse cx="494.8844" cy="590.7769" fill="#F1F1F1" rx="75.3844" ry="17.4769" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="107" x="438.3844" y="594.5244">Возврат книги</text></g><g id="elem_UC7"><ellipse cx="494.8872" cy="279.5774" fill="#F1F1F1" rx="91.8872" ry="20.7774" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="146" x="421.8872" y="282.4241">Просмотр штрафов</text></g><g id="elem_UC8"><ellipse cx="494.7923" cy="666.5585" fill="#F1F1F1" rx="101.7923" ry="22.7585" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="168" x="410.7923" y="669.4051">Управление каталогом</text></g><g id="elem_UC9"><ellipse cx="495.1626" cy="746.8325" fill="#F1F1F1" rx="98.1626" ry="22.0325" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="160" x="415.1626" y="749.6792">Обработка возвратов</text></g><g id="elem_UC10"><ellipse cx="495.1177" cy="826.9235" fill="#F1F1F1" rx="103.6177" ry="23.1235" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="172" x="409.1177" y="829.7702">Отправка уведомлений</text></g><!--MD5=[f36b681f1568c85a1e29d94d0cd105c7]
+entity Reader--><g id="elem_Reader"><ellipse cx="59" cy="219.3" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M59,227.3 L59,254.3 M46,235.3 L72,235.3 M59,254.3 L46,269.3 M59,254.3 L72,269.3 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="70" x="24" y="283.7951">Читатель</text></g><!--MD5=[832f403081fcd74f597fd23813fa47bc]
+entity Librarian--><g id="elem_Librarian"><ellipse cx="59" cy="561.3" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M59,569.3 L59,596.3 M46,577.3 L72,577.3 M59,596.3 L46,611.3 M59,596.3 L72,611.3 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="106" x="6" y="625.7951">Библиотекарь</text></g><!--MD5=[d056c3363978873455d6c3e2eea880a0]
+link Reader to UC1--><g id="link_Reader_UC1"><path d="M65.63,210.74 C74.1,168.73 94.53,103.05 142,72.8 C246.82,6 402.31,84.8 465.63,122.69 " fill="none" id="Reader-to-UC1" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="470.03,125.35,464.3903,117.2757,465.7488,122.767,460.2575,124.1256,470.03,125.35" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="144" x="172" y="43.8669">Зарегистрироваться</text></g><!--MD5=[ac916ca898897012d2f54bd23519a758]
+link Reader to UC2--><g id="link_Reader_UC2"><path d="M61.35,287.23 C65.48,340.6 81.47,435.99 142,483.8 C162.84,500.26 316.1,510.91 413.41,516.09 " fill="none" id="Reader-to-UC2" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="418.57,516.36,409.788,511.9017,413.5766,516.1025,409.3759,519.8911,418.57,516.36" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="113" x="187.5" y="479.8669">Войти в систему</text></g><!--MD5=[53d1f134e755540f09e0020e8714e545]
+link Reader to UC3--><g id="link_Reader_UC3"><path d="M71.98,210.7 C84.12,179.25 106.28,136.66 142,116.8 C181.62,94.77 311.82,87.01 346,116.8 C365.62,133.9 336.49,155.55 354,174.8 C371.64,194.19 398.37,203.23 423.75,207.14 " fill="none" id="Reader-to-UC3" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="428.81,207.86,420.4598,202.6375,423.8594,207.1589,419.338,210.5585,428.81,207.86" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="93" x="197.5" y="93.8669">Искать книги</text></g><!--MD5=[d481ae5e19d1a2d4629d6e3d6a500a74]
+link Reader to UC4--><g id="link_Reader_UC4"><path d="M94.25,251.35 C166.08,257 327.37,271.37 346,287.8 C356.35,296.93 344.33,307.96 354,317.8 C367.6,331.65 385.64,340.78 404.23,346.79 " fill="none" id="Reader-to-UC4" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="409.48,348.41,402.0407,341.9558,404.698,346.9496,399.7041,349.6069,409.48,348.41" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="148" x="170" y="251.8669">Забронировать книгу</text></g><!--MD5=[ac7127f18b5c9fff9496fa9a31f5e56a]
+link Reader to UC5--><g id="link_Reader_UC5"><path d="M76.92,287.04 C90.62,313.43 112.5,347.01 142,365.8 C219.66,415.26 256.08,382.05 346,401.8 C369.04,406.86 393.9,413.1 416.55,419.1 " fill="none" id="Reader-to-UC5" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="421.65,420.45,413.9823,414.2689,416.8184,419.1635,411.9238,421.9996,421.65,420.45" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="171" x="158.5" y="361.8669">Запросить выдачу книги</text></g><!--MD5=[fe1efead2e056177c1db57d598f3ff2d]
+link Reader to UC6--><g id="link_Reader_UC6"><path d="M66.23,286.87 C80.73,373.29 117.42,578.33 142,597.8 C184.73,631.65 338.81,614.93 428.32,601.68 " fill="none" id="Reader-to-UC6" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="433.33,600.93,423.8429,598.2852,428.3834,601.6591,425.0095,606.1997,433.33,600.93" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="99" x="194.5" y="593.8669">Вернуть книгу</text></g><!--MD5=[a7efe8cad7f2fa0b829616e6ae826c4b]
+link Reader to UC7--><g id="link_Reader_UC7"><path d="M90.67,210.54 C104.62,196.14 122.4,181.41 142,173.8 C226.52,140.98 278.19,113.61 346,173.8 C368.43,193.71 334.48,218.04 354,240.8 C366.8,255.72 384.77,265.17 403.58,271.1 " fill="none" id="Reader-to-UC7" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="408.38,272.53,400.8949,266.1289,403.5877,271.1037,398.6129,273.7965,408.38,272.53" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="152" x="168" y="134.8669">Просмотреть штрафы</text></g><!--MD5=[aad6d64e6eea1bb9b70a9155c2814ccb]
+link Librarian to UC2--><g id="link_Librarian_UC2"><path d="M101.38,628.8 C113.59,637.77 127.58,646.09 142,650.8 C228.18,678.96 279.25,712.16 346,650.8 C361.6,636.46 340.33,571.98 354,555.8 C368.83,538.25 390.97,528.64 413.28,523.55 " fill="none" id="Librarian-to-UC2" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="418.35,522.47,408.7145,520.4311,413.4595,523.5108,410.3798,528.2559,418.35,522.47" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="113" x="187.5" y="646.8669">Войти в систему</text></g><!--MD5=[eee22554532a2ae083e40bbf384dfaa4]
+link Librarian to UC3--><g id="link_Librarian_UC3"><path d="M66.06,552.64 C80.46,464.33 117.34,251.83 142,230.8 C183.33,195.56 336.41,198.11 426.51,203.01 " fill="none" id="Librarian-to-UC3" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="431.55,203.29,422.7801,198.808,426.5574,203.019,422.3464,206.7963,431.55,203.29" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="164" x="162" y="196.8669">Помогать в поиске книг</text></g><!--MD5=[289498a019cbf669d2fe201286d5f62b]
+link Librarian to UC4--><g id="link_Librarian_UC4"><path d="M73.44,552.53 C86.21,522.08 108.49,481.01 142,458.8 C218.5,408.1 277.79,488.2 346,426.8 C356.26,417.57 344.3,406.61 354,396.8 C367.38,383.27 385.02,374.33 403.26,368.45 " fill="none" id="Librarian-to-UC4" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="408.42,366.87,398.6409,365.6998,403.642,368.3434,400.9984,373.3446,408.42,366.87" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="202" x="143" y="422.8669">Обрабатывать бронирования</text></g><!--MD5=[5b48e582f5bdc7853101020d910a1497]
+link Librarian to UC5--><g id="link_Librarian_UC5"><path d="M112.43,578.95 C122.24,576.83 132.42,574.7 142,572.8 C187.16,563.86 313.86,569.75 346,536.8 C362.63,519.75 338.45,501.85 354,483.8 C364.14,472.03 377.41,463.43 391.75,457.16 " fill="none" id="Librarian-to-UC5" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="396.65,455.12,386.8042,454.8741,392.0317,457.036,389.8698,462.2634,396.65,455.12" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="169" x="159.5" y="532.8669">Оформлять выдачу книг</text></g><!--MD5=[20a7124dfba47e53727d16488b391001]
+link Librarian to UC6--><g id="link_Librarian_UC6"><path d="M75.16,628.92 C88.33,656.36 110.31,691.31 142,707.8 C182.22,728.72 312.42,738.26 346,707.8 C359.56,695.5 342.04,639.67 354,625.8 C369.21,608.16 391.84,598.72 414.49,593.84 " fill="none" id="Librarian-to-UC6" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="419.62,592.81,410.014,590.6366,414.7155,593.7823,411.5697,598.4838,419.62,592.81" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="170" x="159" y="703.8669">Принимать возврат книг</text></g><!--MD5=[f7bd9a2658da001200e3211cd738bc2e]
+link Librarian to UC7--><g id="link_Librarian_UC7"><path d="M61.03,552.47 C64.73,497.5 80.14,397.15 142,344.8 C177.03,315.16 300.92,321.35 346,312.8 C372.07,307.85 400.55,301.69 425.5,296.03 " fill="none" id="Librarian-to-UC7" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="430.44,294.91,420.78,292.9906,425.5628,296.0113,422.5421,300.7941,430.44,294.91" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="148" x="170" y="308.8669">Управлять штрафами</text></g><!--MD5=[fce1a6da93ad4c74a9cf68d987203c64]
+link Librarian to UC8--><g id="link_Librarian_UC8"><path d="M67.36,629.11 C77.08,667.93 98.36,725.98 142,752.8 C219.24,800.28 276.61,811.16 346,752.8 C361.88,739.44 340.13,722.23 354,706.8 C365.82,693.66 381.63,684.71 398.36,678.64 " fill="none" id="Librarian-to-UC8" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="403.1,677.01,393.2872,676.1679,398.374,678.6426,395.8994,683.7294,403.1,677.01" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="149" x="169.5" y="748.8669">Управлять каталогом</text></g><!--MD5=[9b4a36d85369484116d82ef58c45fee4]
+link Librarian to UC9--><g id="link_Librarian_UC9"><path d="M61.16,628.8 C65.07,681.42 80.78,774.83 142,817.8 C216.21,869.89 274.54,873.6 346,817.8 C357.56,808.78 343.77,796.3 354,785.8 C366.87,772.58 383.81,763.73 401.45,757.83 " fill="none" id="Librarian-to-UC9" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="406.44,756.25,396.6517,755.1599,401.6742,757.7625,399.0716,762.7851,406.44,756.25" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="172" x="158" y="813.8669">Обрабатывать возвраты</text></g><!--MD5=[28e266e682b0732522140ba821b775ae]
+@startuml
+left to right direction
+
+actor "Читатель" as Reader
+actor "Библиотекарь" as Librarian
+
+rectangle "Библиотека" {
+    usecase "Регистрация" as UC1
+    usecase "Вход в систему" as UC2
+    usecase "Поиск книг" as UC3
+    usecase "Бронирование книги" as UC4
+    usecase "Оформление выдачи книги" as UC5
+    usecase "Возврат книги" as UC6
+    usecase "Просмотр штрафов" as UC7
+    usecase "Управление каталогом" as UC8
+    usecase "Обработка возвратов" as UC9
+    usecase "Отправка уведомлений" as UC10
+}
+
+' Взаимодействие Читателя с Use Cases
+Reader - -> UC1 : Зарегистрироваться
+Reader - -> UC2 : Войти в систему
+Reader - -> UC3 : Искать книги
+Reader - -> UC4 : Забронировать книгу
+Reader - -> UC5 : Запросить выдачу книги
+Reader - -> UC6 : Вернуть книгу
+Reader - -> UC7 : Просмотреть штрафы
+
+' Взаимодействие Библиотекаря с Use Cases
+Librarian - -> UC2 : Войти в систему
+Librarian - -> UC3 : Помогать в поиске книг
+Librarian - -> UC4 : Обрабатывать бронирования
+Librarian - -> UC5 : Оформлять выдачу книг
+Librarian - -> UC6 : Принимать возврат книг
+Librarian - -> UC7 : Управлять штрафами
+Librarian - -> UC8 : Управлять каталогом
+Librarian - -> UC9 : Обрабатывать возвраты
+@enduml
+
+@startuml
+left to right direction
+
+actor "Читатель" as Reader
+actor "Библиотекарь" as Librarian
+
+rectangle "Библиотека" {
+    usecase "Регистрация" as UC1
+    usecase "Вход в систему" as UC2
+    usecase "Поиск книг" as UC3
+    usecase "Бронирование книги" as UC4
+    usecase "Оформление выдачи книги" as UC5
+    usecase "Возврат книги" as UC6
+    usecase "Просмотр штрафов" as UC7
+    usecase "Управление каталогом" as UC8
+    usecase "Обработка возвратов" as UC9
+    usecase "Отправка уведомлений" as UC10
+}
+
+Reader - -> UC1 : Зарегистрироваться
+Reader - -> UC2 : Войти в систему
+Reader - -> UC3 : Искать книги
+Reader - -> UC4 : Забронировать книгу
+Reader - -> UC5 : Запросить выдачу книги
+Reader - -> UC6 : Вернуть книгу
+Reader - -> UC7 : Просмотреть штрафы
+
+Librarian - -> UC2 : Войти в систему
+Librarian - -> UC3 : Помогать в поиске книг
+Librarian - -> UC4 : Обрабатывать бронирования
+Librarian - -> UC5 : Оформлять выдачу книг
+Librarian - -> UC6 : Принимать возврат книг
+Librarian - -> UC7 : Управлять штрафами
+Librarian - -> UC8 : Управлять каталогом
+Librarian - -> UC9 : Обрабатывать возвраты
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 17:01:30 UTC 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>
