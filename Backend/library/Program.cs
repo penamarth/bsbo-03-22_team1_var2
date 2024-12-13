@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 #region Logger Class
 
@@ -1205,64 +1206,69 @@ public enum InventoryOption
     SendBookForRepair  // Вариант C: Отправить поврежденную книгу на ремонт
 }
 
-/// <summary>
-/// Класс Program, содержащий точку входа приложения.
-/// </summary>
-public class Program
+
+public class LibraryService
 {
-    public static void Main(string[] args)
+    private readonly Library _library;
+    private readonly Librarian _librarian;
+    private readonly Reader _reader;
+
+    public LibraryService()
     {
-        // Создание библиотеки
-        Library library = new Library
+      
+        _library = CreateLibrary();
+        _librarian = CreateLibrarian(_library);
+        _reader = CreateReader(401, "Иван Иванов", "ivan@example.com", "555-1234");
+    }
+
+    private Library CreateLibrary()
+    {
+        var library = new Library
         {
             LibraryName = "Городская библиотека",
             Address = "ул. Примерная, д. 1",
             Phone = "123-456-7890"
         };
 
-        // Создание каталога
-        Catalog catalog = library.Catalog;
-        catalog.Id = 1;
-        catalog.Name = "Основной каталог";
 
-        // Создание шкафов
-        Shelf shelf1 = new Shelf { Id = 101, Name = "Шкаф A" };
-        Shelf shelf2 = new Shelf { Id = 102, Name = "Шкаф B" };
+        var catalog = new Catalog
+        {
+            Id = 1,
+            Name = "Основной каталог"
+        };
+        library.Catalog = catalog;
+
+
+        var shelf1 = new Shelf { Id = 101, Name = "Шкаф A" };
+        var shelf2 = new Shelf { Id = 102, Name = "Шкаф B" };
         catalog.AddShelf(shelf1);
         catalog.AddShelf(shelf2);
 
-        // Создание ячеек
-        Cell cell1 = new Cell { Id = 201, Name = "Ячейка 1" };
-        Cell cell2 = new Cell { Id = 202, Name = "Ячейка 2" };
-        Cell cell3 = new Cell { Id = 203, Name = "Ячейка 3" };
-        Cell cell4 = new Cell { Id = 204, Name = "Ячейка 4" };
-        Cell cell5 = new Cell { Id = 205, Name = "Ячейка 5" };
+        var cell1 = new Cell { Id = 201, Name = "Ячейка 1" };
+        var cell2 = new Cell { Id = 202, Name = "Ячейка 2" };
+        var cell3 = new Cell { Id = 203, Name = "Ячейка 3" };
+        var cell4 = new Cell { Id = 204, Name = "Ячейка 4" };
+        var cell5 = new Cell { Id = 205, Name = "Ячейка 5" };
         shelf1.AddCell(cell1);
         shelf1.AddCell(cell2);
         shelf2.AddCell(cell3);
         shelf2.AddCell(cell4);
         shelf2.AddCell(cell5);
 
-        // Создание книг
-        Book book1 = new Book { BookId = 301, Title = "Война и мир", Author = "Лев Толстой", Status = "Available" };
-        Book book2 = new Book { BookId = 302, Title = "Преступление и наказание", Author = "Федор Достоевский", Status = "Available" };
+
+        var book1 = new Book { BookId = 301, Title = "Война и мир", Author = "Лев Толстой", Status = "Available" };
+        var book2 = new Book { BookId = 302, Title = "Преступление и наказание", Author = "Федор Достоевский", Status = "Available" };
         library.AddBookToCatalog(book1);
         library.AddBookToCatalog(book2);
+        
 
-        // Создание читателя
-        Reader reader = new Reader
-        {
-            UserId = 401,
-            Name = "Иван Иванов",
-            Email = "ivan@example.com",
-            ContactInfo = "555-1234"
-        };
-        library.Readers.Add(reader);
-        reader.Register();
-        reader.Login();
+        return library;
+    }
 
-        // Создание библиотекаря
-        Librarian librarian = new Librarian
+
+    private Librarian CreateLibrarian(Library library)
+    {
+        var librarian = new Librarian
         {
             UserId = 501,
             Name = "Мария Петрова",
@@ -1277,40 +1283,82 @@ public class Program
         librarian.Register();
         librarian.Login();
 
-        Logger.Log("\nProgram", nameof(Main), "------ Начало операций ------");
-        // 1. Выдача книги 
-        Logger.Log("Program", nameof(Main), "------ Выдача книги  ------");
-        reader.RequestBookIssue(301, library);
-        reader.RequestBookIssue(302, library);
-        librarian.GiveBook(301, reader, library);
-        librarian.GiveBook(302, reader, library);
+        return librarian;
+    }
 
-        // 2. Возврат книги 
-        Logger.Log("\nProgram", nameof(Main), "------ Возврат книги ------");
-        reader.GiveBookToReturn(301, library);
 
-        // 3. Заказ книги 
-        Logger.Log("\nProgram", nameof(Main), "------ заказ книги  ------");
-        Book book3 = new Book { BookId = 303, Title = "Анна Каренина", Author = "Лев Толстой", Status = "Available" };
-        library.AddBookToCatalog(book3);
-        reader.ReserveBook(301, library);
-        reader.ReserveBook(302, library);
-
-        // 4. Поиск книги 
-        Logger.Log("\nProgram", nameof(Main), "------ Поиск книги ------");
-        Dictionary<string, string> searchParams = new Dictionary<string, string>
+    public Reader CreateReader(int userId, string name, string email, string contactInfo)
+    {
+        var reader = new Reader
         {
-            { "query", "Война" }
+            UserId = userId,
+            Name = name,
+            Email = email,
+            ContactInfo = contactInfo
         };
-        List<Book> foundBooks = librarian.FindBooks(searchParams, library);
-        librarian.DisplayBooksList(foundBooks);
+        _library.Readers.Add(reader);
+        reader.Register();
+        reader.Login();
 
-        // 5. Уведомление 
-        // Для демонстрации, предполагаем, что срок возврата книги скоро истечет
-        Logger.Log("\nProgram", nameof(Main), "------ Уведомление ------");
+        return reader;
+    }
+
+    public Reader GetReader(int userId)
+    {
+        var reader = _library.Readers.FirstOrDefault(r => r.UserId == userId);
+        if (reader == null)
+        {
+            throw new Exception($"Читатель с ID {userId} не найден.");
+        }
+        return reader;
+    }
+
+
+    public void IssueBooks(int readerId)
+    {
+        var reader = GetReader(readerId);
+        Logger.Log("LibraryService", nameof(IssueBooks), "------ Выдача книги  ------");
+        reader.RequestBookIssue(301, _library);
+        reader.RequestBookIssue(302, _library);
+        _librarian.GiveBook(301, reader, _library);
+        _librarian.GiveBook(302, reader, _library);
+    }
+
+
+    public void ReturnBooks(int readerId)
+    {
+        var reader = GetReader(readerId);
+        Logger.Log("LibraryService", nameof(ReturnBooks), "------ Возврат книги ------");
+        reader.GiveBookToReturn(301, _library);
+    }
+
+
+    public void ReserveBooks(int readerId)
+    {
+        var reader = GetReader(readerId);
+        Logger.Log("LibraryService", nameof(ReserveBooks), "------ заказ книги  ------");
+        Book book3 = new Book { BookId = 303, Title = "Анна Каренина", Author = "Лев Толстой", Status = "Available" };
+        _library.AddBookToCatalog(book3);
+        reader.ReserveBook(301, _library);
+        reader.ReserveBook(302, _library);
+    }
+
+
+    public void SearchBooks(Dictionary<string, string> searchParams)
+    {
+        Logger.Log("LibraryService", nameof(SearchBooks), "------ Поиск книги ------");
+        List<Book> foundBooks = _librarian.FindBooks(searchParams, _library);
+        _librarian.DisplayBooksList(foundBooks);
+    }
+
+
+    public void SendNotification(int readerId)
+    {
+        var reader = GetReader(readerId);
+        Logger.Log("LibraryService", nameof(SendNotification), "------ Уведомление ------");
         Notification notification1 = new Notification
         {
-            NotificationId = library.GenerateNotificationId(),
+            NotificationId = _library.GenerateNotificationId(),
             UserId = reader.UserId,
             BookId = 302,
             Type = "Due Soon",
@@ -1318,63 +1366,44 @@ public class Program
             Date = DateTime.Now,
             Status = "Sent"
         };
-        library.SendNotification(notification1);
+        _library.SendNotification(notification1);
+    }
 
-        // 6. Инвентаризация 
-        Logger.Log("\nProgram", nameof(Main), "------ Инвентаризация  ------");
+    public void StartInventory()
+    {
+        Logger.Log("LibraryService", nameof(StartInventory), "------ Инвентаризация  ------");
         List<InventoryOption> inventoryOptions = new List<InventoryOption>
         {
-            InventoryOption.AddNewBook,        
-            InventoryOption.DeleteBook,        
-            InventoryOption.SendBookForRepair  
+            InventoryOption.AddNewBook,
+            InventoryOption.DeleteBook,
+            InventoryOption.SendBookForRepair
         };
-        librarian.StartInventory(inventoryOptions);
-
-        //// Альтернативные сценарии
-
-        //// 1. Возврат книги с повреждениями
-        //// Предварительно выдать книгу
-        //librarian.GiveBook(301, reader, library);
-        //// Добавить повреждение перед возвратом
-        //Book damagedBookReturn = library.GetBookById(302);
-        //if (damagedBookReturn != null)
-        //{
-        //    Damage damage = new Damage
-        //    {
-        //        DamageId = 1,
-        //        Description = "Разорванные страницы",
-        //        Cost = 30
-        //    };
-        //    damagedBookReturn.AddDamage(damage);
-        //}
-        //// Возврат книги с повреждениями
-        //reader.GiveBookToReturn(302, library);
-
-        //// 2. Возврат книги с просрочкой
-
-        //librarian.GiveBook(303, reader, library);
-
-        //librarian.AddFineToUser(reader.UserId, 50, library);
-
-        //reader.GiveBookToReturn(303, library);
-
-        //// 3 Выдача книги пользователю с задолженностью
-        //// Убедимся, что у пользователя есть задолженность
-        //librarian.AddFineToUser(reader.UserId, 20, library);
-        //// Попытка выдать книгу
-        //librarian.GiveBook(301, reader, library); 
-
-        //// 4 Поиск книги, которая не существует
-        //Dictionary<string, string> searchParams2 = new Dictionary<string, string>
-        //{
-        //    { "query", "Неизвестная книга" }
-        //};
-        //List<Book> foundBooks2 = librarian.FindBooks(searchParams2, library);
-        //librarian.DisplayBooksList(foundBooks2);
+        _librarian.StartInventory(inventoryOptions);
+    }
+}
 
 
-        reader.Logout();
-        librarian.Logout();
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        var service = new LibraryService();
+
+
+        service.IssueBooks(401);  
+
+        service.ReturnBooks(401);
+
+     
+        service.ReserveBooks(401);
+
+        var searchParams = new Dictionary<string, string> { { "query", "Война" } };
+        service.SearchBooks(searchParams);
+
+
+        service.SendNotification(401);
+
+        service.StartInventory();
 
         Logger.Log("Program", nameof(Main), "--- Завершение операций ---");
     }
